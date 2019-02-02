@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Главня.Студия дизайна «Нёрдс» </title>
-  </head>
-  <body>
-  	<!-- начало header -->
+    <title>Главня Студия дизайна «Нёрдс» </title>
+</head>
+<body>
+    <!-- начало header -->
     <header class="main-header">
       <nav class="main-navigaton">
         <a class="header-page-logo" href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Студия дизайна «Нёрдс»"></a>
@@ -19,11 +19,18 @@
           <li class="cart-link"><a href="cart.html" class="cart"><img src="img/cart-icon.png" width="15" height="15" alt="Корзина"/>Корзина</a></li>
         </ul>
       </nav>
+      <h1 class="visually-hidden">Студия дизайна «Нёрдс»</h1>
     </header>
     <!-- конец header -->
     <!-- начало main -->
     <main class="container">
-      <h1 class="visually-hidden">Студия дизайна «Нёрдс»</h1>
+      <aside class="top-banner">
+        <div class="banner-content">
+          <div class="slogan">Долго, дорого, скурпулезно</div>
+           <div class="details">Математически выверенный дизайн для вашего сайта и мобильного приложения</div>
+           <a href="info.html" class="btn btn-details">Узнать больше</a>
+        </div>
+      </aside>
       <section class="our-services">
         <ul class="service-list">
           <li class="service-item">
@@ -52,9 +59,48 @@
           </li>
         </ul>
       </section>
+      <!-- Начало О студии -->
+      <section class="nerds">
+        <ul class="nerds-items">
+          <li class="nerds-description">
+            <!-- тут текст о студии-->
+          </li>
+          <li class="nerds-statistics">
+           <div class="statistics-info"><img src="img/nerds-illustration.png" width="360" height="280" alt="Студия дизайна «Нёрдс»"/></div>
+            <p>С 2004 года любим точность во всем:</p>
+            <ul class="statistics-data">
+              <li><div class="data-1"/>146%</div><p>Уровень самодостаточности</p></li>
+              <li><div class="data-2"/>100%</div><p>Соблюдение сроков</p></li>
+              <li><div class="data-3"/>50%</div><p>Минимальня предоплата</p></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <!-- Конец О студии -->
+      <!-- Начало наши клиенты -->
+      <section class="our-clients">
+          <a href="https://htmlacademy.ru"><img scr="img/logo-1.png" alt="HTML Academy"/></a>
+          <a href="https://borodinsky.ru"><img scr="img/logo-2.png" alt="Бородинский"/></a>
+          <a href="https://pink.ru"><img scr="img/logo-3.png" alt="Пинк"/></a>
+          <a href="https://misha.ru"><img scr="img/logo-4.png" alt="Мишка"/></a>
+        </section>
+         <!--  Конец наши клиенты -->
+         <!--  Начало контакты и карта Нёрдс -->
+        <section class="nerds-location">
+            <div class="nerds-contact">
+              <h4 class="nerds-title">Nёrds design studio</h4>
+              <p class="nerds-address">
+                  191186 Санкт-Петербург,<br/>
+                  ул. Б. Конюшенная, д.19/8<br/>
+                  +7 (812) 275-75-75
+               </p>
+              <a href="mailto:contacts@htmlacademy.ru" class="btn btn-contacts">Напишите нам</a>
+            </div>
+        </section>
+        <!--  Конец контакты и карта Нёрдс -->
     </main>
-    <!-- конец main -->
-    <!-- начало footer -->
+    <!-- Конец main -->
+    <!-- Начало footer -->
     <footer class="footer">
       <div class="footer-contacts">
         <div class="footer-social">
@@ -71,5 +117,5 @@
       </div>
     </footer>
     <!-- конец footer -->
-  </body>
+</body>
 </html>
