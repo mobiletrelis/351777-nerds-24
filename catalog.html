@@ -2,21 +2,21 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Каталог Студия дизайна «Нёрдс» </title>
+    <title>Каталог. Студия дизайна «Нёрдс» </title>
 </head>
 <body>
     <!-- начало header -->
     <header class="inner-header">
       <nav class="inner-navigaton">
-        <a class="header-page-logo" href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Студия дизайна «Нёрдс»"></a>
+        <a class="header-page-logo" aria-label="Логотип Студия дизайна «Нёрдс»" href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Студия дизайна «Нёрдс»"></a>
         <ul class="site-navigation">
-          <li><a href="studio.html">Информация</a></li>
-          <li><a href="clients.html">Новости</a></li>
-          <li><a href="shop.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="studio.html" aria-label="Информация о студии дизайна «Нёрдс»">Информация</a></li>
+          <li><a href="clients.html" aria-label="Клиенты студии дизайна «Нёрдс»">Новости</a></li>
+          <li><a href="catalog.html" aria-label="Каталог товаров студии дизайна «Нёрдс»">Магазин</a></li>
+          <li><a href="contacts.html" aria-label="Контакты студии дизайна «Нёрдс»">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="cart-link"><a href="cart.html" class="cart"><img src="img/cart-icon.png" alt="Корзина"/></a></li>
+          <li class="cart-link"><a href="cart.html" aria-label="Корзина заказов" class="cart"><img src="img/cart-icon.png" width="15" height="15" alt="Корзина"/>Корзина</a></li>
         </ul>
       </nav>
         <h1 class="big-title">Магазин готовых шаблонов</h1>
@@ -25,62 +25,135 @@
     <!-- начало main -->
     <main class="container-inner">
       <aside class="template-filters">
-        <section class="filter-grids">
-          <h2>Сетка</h2>
-          <!--тут будет форма -->
-        </section>
-        <section class="filter-features">
-          <h2>Особенности</h2>
-          <!--тут будет форма -->
-          <!--тут будет кнопка "показать" -->
-        </section>
+        <section class="filters">
+           <form name="filters-form" method="post"
+          action="https://echo.nerds.ru">
+          <fieldset>
+            <!-- начало фильтр "особенности" -->
+            <ledend>Сетка:</ledend>
+      <p>
+        <input type="radio" aria-label="Сетка адаптивная" id="adaptive"  name="adaptive" value="adaptive" checked tabindex="0">
+        <label for="adaptive">Адаптивная</label>
+      </p>
+      <p>
+        <input type="radio" aria-label="Сетка фиксированная" id="static" name="static" value="static" tabindex="1">
+        <label for="static">Фиксированная</label>
+      </p>
+      <p>
+        <input type="radio" aria-label="Сетка резиновая" id="responsive" name="responsive" value="responsive" tabindex="-1">
+        <label for="responsive">Резиновая</label>
+      </p>
+      <!-- конец фильтр "сетка" -->
+      <!-- начало фильтр "особенности" -->
+      <ledend>Особенности:</ledend>
+      <p>
+        <input type="checkbox" aria-label="Особенность слайдер" id="slider" name="slider" checked tabindex="0">
+        <label for="slider">Слайдер</label>
+      </p>
+      <p>
+        <input type="checkbox" aria-label="Особенность блок преимуществ"  id="feature-block" name="feature-block" tabindex="1">
+        <label for="feature-block">Блок преимуществ</label>
+      </p>
+      <p>
+        <input type="checkbox" aria-label="Особенность новости"  id="news" name="news" checked tabindex="2">
+        <label for="news">Новости</label>
+      </p>
+      <p>
+        <input type="checkbox" aria-label="Особенность галерея"  id="gallery" name="gallery" tabindex="3">
+        <label for="gallery">Галерея</label>
+      </p>
+      <p>
+        <input type="checkbox" aria-label="Особенность - корзина" id="cart" name="cart" tabindex="4">
+        <label for="cart">Корзина</label>
+      </p>
+      <!-- конец фильтр "особенности" -->
+      <button type="submit" aria-label="Показать шаблоны выбранных фильтров" class="btn btn-filters" tabindex="5">Показать</button>
+      </fieldset>
+
+    </form>
+      </section>
       </aside>
       <section class="templates-shop">
-        <h2 class="visually-hidden"></h2>
+        <h2 class="visually-hidden">Каталог дизайнов</h2>
+        <h3 class="nerds-title visually-hidden">Мы-маленькая, но гордая<br/>дизайн-студия из Краснодара.</h3>
         <ul class="templates-list">
           <li class="template-item">
             <p class="template-image">
-              <a href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Седона"></a>
+              <a href="catalog-item.html" aria-label="Дизайн шаблон магазина Седона"><img src="img/img-sedona.jpg" width="360" height="576" alt="Седона"></a>
             </p>
           </li>
           <li class="template-item">
             <p class="template-image">
-              <a href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="Пинк"></a>
+              <a href="catalog-item.html" aria-label="Дизайн шаблон сайта Пинк"><img src="img/img-pink.jpg" width="360" height="576" alt="Пинк"></a>
             </p>
           </li>
           <li class="template-item">
             <p class="template-image">
-              <a href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп «Бородинский»"></a>
+              <a href="catalog-item.html" aria-label="Дизайн шаблон Барбершоп «Бородинский»"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп «Бородинский»"></a>
             </p>
           </li>
           <li class="template-item">
             <p class="template-image">
-              <a href="#"><img src="img/img-mishka.jpg" width="360" height="576"  alt="Мишка"></a>
+              <a href="catalog-item.html" aria-label="Дизайн шаблон магазина Мишка"><img src="img/img-mishka.jpg" width="360" height="576"  alt="Мишка"></a>
             </p>
           </li>
           <li class="template-item">
             <p class="template-image">
-              <a href="#"><img src="img/img-aplus.jpg" width="360" height="576"  alt="А+"></a>
+              <a href="catalog-item.html" aria-label="Дизайн шаблон магазина А плюс"><img src="img/img-aplus.jpg" width="360" height="576"  alt="А+"></a>
             </p>
           </li>
           <li class="template-item">
             <p class="template-image">
-              <a href="#"><img src="img/img-kvast.jpg" width="360" height="576"  alt="Кваст"></a>
+              <a href="catalog-item.html" aria-label="Дизайн шаблон магазина Кваст "><img src="img/img-kvast.jpg" width="360" height="576"  alt="Кваст"></a>
             </p>
           </li>
         </ul>
       </section>
-       <section class="nerds-location">
-            <div class="nerds-contact">
-              <h4 class="nerds-title">Nёrds design studio</h4>
-              <p class="nerds-address">
+           <!--  начало  карта Нёрдс -->
+        <section class="nerds-location">
+            <div class="nerds-contact"  aria-labelledby="address-studio" aria-describedby="address-info">
+              <div class="nerds-title" id="address-studio">Nёrds design studio</div>
+              <p id="address-info" class="nerds-address">
                   191186 Санкт-Петербург,<br/>
                   ул. Б. Конюшенная, д.19/8<br/>
                   +7 (812) 275-75-75
                </p>
-              <a href="mailto:contacts@htmlacademy.ru" class="btn btn-contacts">Напишите нам</a>
+              <a href="mailto:contacts@nerds.ru" aria-label="Наш email contacts@nerds.ru" class="btn btn-contacts">Напишите нам</a>
             </div>
         </section>
+        <!--  конец карта Нёрдс -->
+        <!-- начало форма обратной связи -->
+        <section class="feedback visually-hidden">
+          <form class="feedback" method="post"
+          action="https://echo.nerds.ru">
+          <p class="close-btn"><a onClick="close()"  aria-describedby="descriptionClose" aria-label="Кнопка закрыть окно формы отправки" class="btn btn-close">close</a>
+           <span class="visually-hidden" id="descriptionClose">Вы закрывает форму отправки  обратной связи</span>
+          </p>
+          <div role="group" aria-labelledby="feedback-form">
+            <div id="feedback-form">
+          <fieldset>
+            <ledend>Напишите нам</ledend>
+      <p>
+        <label for="fullname"><span class="visually-hidden">Ваше имя:</span>Ваше имя:</label>
+        <input id="fullname" tabindex="0" type="text"
+               name="fullname" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user-email"><span class="visually-hidden">Ваш e-mail:</span>Ваш e-mail:</label>
+        <input id="user-email" tabindex="1" type="email"
+               name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="email-text">Т<span class="visually-hidden">Текст письма:</span>Текст письма:</label>
+        <textarea tabindex="-1" name="email-text" id="email-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="btn feedback-btn" aria-label="Отправить нам сообщение" name="submit" type="submit">Отправить</button>
+    </fieldset>
+    </div>
+  </div>
+    </form>
+  </section>
+    <!-- конец форма обратной связи -->
     </main>
     <!-- конец main -->
     <!-- начало footer -->
@@ -94,9 +167,9 @@
           </ul>
         </div>
       </div>
-      <div class="footer-info">
+      <div class="footer-info" aria-describedby="discount-info">
         <div class="footer-info-text"><b>Давайте дружить, это выгодно!</b></div>
-        <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+        <p id="discount-info" class="discount">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
     <!-- конец footer -->

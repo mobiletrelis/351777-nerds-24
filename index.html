@@ -2,21 +2,21 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Главня Студия дизайна «Нёрдс» </title>
+    <title>Главная страница. Студия дизайна «Нёрдс» </title>
 </head>
 <body>
     <!-- начало header -->
     <header class="main-header">
       <nav class="main-navigaton">
-        <a class="header-page-logo" href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Студия дизайна «Нёрдс»"></a>
+        <a onClick="window.location.reload()" class="header-page-logo" aria-label="Логотип студии дизайна «Нёрдс»" href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Студия дизайна «Нёрдс»"></a>
         <ul class="site-navigation">
-          <li><a href="studio.html">Информация</a></li>
-          <li><a href="clients.html">Новости</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="studio.html" aria-label="Информация о студии дизайна «Нёрдс»">Информация</a></li>
+          <li><a href="clients.html" aria-label="Клиенты студии дизайна «Нёрдс»">Новости</a></li>
+          <li><a href="catalog.html" aria-label="Каталог товаров студии дизайна «Нёрдс»">Магазин</a></li>
+          <li><a href="contacts.html" aria-label="Контакты студии дизайна «Нёрдс»">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="cart-link"><a href="cart.html" class="cart"><img src="img/cart-icon.png" width="15" height="15" alt="Корзина"/>Корзина</a></li>
+          <li class="cart-link"><a href="cart.html" aria-label="Корзина заказов" class="cart"><img src="img/cart-icon.png" width="15" height="15" alt="Корзина"/>Корзина</a></li>
         </ul>
       </nav>
       <h1 class="visually-hidden">Студия дизайна «Нёрдс»</h1>
@@ -25,48 +25,56 @@
     <!-- начало main -->
     <main class="container">
       <aside class="top-banner">
-        <div class="banner-content">
+        <div class="banner-content" aria-describedby="studio-desc">
           <div class="slogan">Долго, дорого, скурпулезно</div>
-           <div class="details">Математически выверенный дизайн для вашего сайта и мобильного приложения</div>
-           <a href="info.html" class="btn btn-details">Узнать больше</a>
+           <div  id="studio-desc" class="details">Математически выверенный дизайн для вашего сайта и мобильного приложения</div>
+           <a href="info.html" aria-label="Узнать больше о услугах студии дизайна «Нёрдс»" class="btn btn-details">Узнать больше</a>
         </div>
       </aside>
       <section class="our-services">
         <ul class="service-list">
           <li class="service-item">
             <div class="service-image">
-              <a href="#"><img src="img/illustration-1.png" width="300" height="146" alt="Веб сайты"></a>
+              <a href="cart.html" aria-label="Наши услуги - веб-сайт"><img src="img/illustration-1.png" width="300" height="146" alt="Веб сайты"></a>
             </div>
             <h3 class="service-title">Веб-сайты</h3>
             <p class="service-desc">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <p class="button button-red order"><a href="cart.html" class="order">Заказать</a></p>
+            <p class="button button-red order"><a href="cart.html" aria-label="Заказать веб-сайт" class="order">Заказать</a></p>
           </li>
           <li class="service-item">
             <div class="service-image">
-              <a href="#"><img src="img/illustration-2.png" width="300" height="146" alt="Веб сайты"></a>
+              <a href="catalog.html" aria-label="Наши услуги - приложений"><img src="img/illustration-2.png" width="300" height="146" alt="Веб приложений"/></a>
             </div>
             <h3 class="service-title">Приложения</h3>
             <p class="service-desc">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <p class="button button-green order"><a href="cart.html" class="order">Заказать</a></p>
+            <p class="button button-green order"><a href="cart.html" aria-label="Заказать приложение" class="order">Заказать</a></p>
           </li>
           <li class="service-item">
             <div class="service-image">
-              <a href="#"><img src="img/illustration-3.png" width="300" height="146" alt="Презентации"/></a>
+              <a href="catalog.html" aria-label="Наши услуги - презентации"><img src="img/illustration-3.png" width="300" height="146" alt="Презентации"/></a>
             </div>
             <h3 class="service-title">Презентации</h3>
             <p class="service-desc">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <p class="button button-yellow order"><a href="cart.html" class="order">Заказать</a></p>
+            <p class="button button-yellow order"><a href="cart.html" aria-label="Заказать презентацию" class="order">Заказать</a></p>
           </li>
         </ul>
       </section>
-      <!-- Начало О студии -->
+      <!-- начало О студии -->
       <section class="nerds">
         <ul class="nerds-items">
           <li class="nerds-description">
-            <!-- тут текст о студии-->
+            <h3 class="nerds-title">Мы-маленькая, но гордая<br/>дизайн-студия из Краснодара.</h3>
+            <p class="nerds-slogan">Исповедуем принцыпы минимализма и чистоты. Ставим математический расчет<br/>
+            выше креатива. Работаем не покладая рук, как роботы.
+            Выполняем закаы на разраотку</p>
+            <ul class="nerds-orders">
+              <li>Веб-сайты любой сложности</li>
+              <li>Мобильные приложения для IOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
           </li>
           <li class="nerds-statistics">
-           <div class="statistics-info"><img src="img/nerds-illustration.png" width="360" height="280" alt="Студия дизайна «Нёрдс»"/></div>
+           <div class="statistics-info"><img src="img/nerds-illustration.png" width="360" height="280" alt="Статистика студия дизайна «Нёрдс»"/></div>
             <p>С 2004 года любим точность во всем:</p>
             <ul class="statistics-data">
               <li><div class="data-1"/>146%</div><p>Уровень самодостаточности</p></li>
@@ -76,44 +84,76 @@
           </li>
         </ul>
       </section>
-      <!-- Конец О студии -->
-      <!-- Начало наши клиенты -->
+      <!-- конец О студии -->
+      <!-- начало наши клиенты -->
       <section class="our-clients">
-          <a href="https://htmlacademy.ru"><img scr="img/logo-1.png" alt="HTML Academy"/></a>
-          <a href="https://borodinsky.ru"><img scr="img/logo-2.png" alt="Бородинский"/></a>
-          <a href="https://pink.ru"><img scr="img/logo-3.png" alt="Пинк"/></a>
-          <a href="https://misha.ru"><img scr="img/logo-4.png" alt="Мишка"/></a>
+          <a href="https://htmlacademy.ru" aria-label="HTML Academy клиент студии «Нёрдс»"><img cr="img/logo-1.png" alt="HTML Academy"/></a>
+          <a href="https://borodinsky.ru" aria-label="Бородинский клиент студии «Нёрдс»"><img scr="img/logo-2.png" alt="Бородинский"/></a>
+          <a href="https://pink.ru" aria-label="Пинк клиент студии «Нёрдс»"><img scr="img/logo-3.png" alt="Пинк"/></a>
+          <a href="https://misha.ru" aria-label="Мишка клиент студии «Нёрдс»"><img scr="img/logo-4.png" alt="Мишка"/></a>
         </section>
-         <!--  Конец наши клиенты -->
-         <!--  Начало контакты и карта Нёрдс -->
+         <!--  конец наши клиенты -->
+         <!--  начало  карта Нёрдс -->
         <section class="nerds-location">
-            <div class="nerds-contact">
-              <h4 class="nerds-title">Nёrds design studio</h4>
-              <p class="nerds-address">
+            <div class="nerds-contact"  aria-labelledby="address-studio" aria-describedby="address-info">
+              <div class="nerds-title" id="address-studio">Nёrds design studio</div>
+              <p id="address-info" class="nerds-address">
                   191186 Санкт-Петербург,<br/>
                   ул. Б. Конюшенная, д.19/8<br/>
                   +7 (812) 275-75-75
                </p>
-              <a href="mailto:contacts@htmlacademy.ru" class="btn btn-contacts">Напишите нам</a>
+              <a href="mailto:contacts@nerds.ru" aria-label="Наш email contacts@nerds.ru" class="btn btn-contacts">Напишите нам</a>
             </div>
         </section>
-        <!--  Конец контакты и карта Нёрдс -->
+        <!--  конец карта Нёрдс -->
+        <!-- начало форма обратной связи -->
+        <section class="feedback visually-hidden">
+          <form name="feedback-form" method="post"
+          action="https://echo.nerds.ru">
+          <p class="close-btn"><a onclick="close()" aria-describedby="descriptionClose" aria-label="Кнопка закрыть окно формы отправки" class="btn btn-close">close</a>
+           <span class="visually-hidden" id="descriptionClose">Вы закрывает форму отправки  обратной связи</span>
+          </p>
+          <div role="group" aria-labelledby="feedback-form">
+            <div id="feedback-form">
+          <fieldset>
+            <ledend>Напишите нам</ledend>
+      <p>
+        <label for="fullname"><span class="visually-hidden">Ваше имя:</span>Ваше имя:</label>
+        <input id="fullname" tabindex="0" type="text"
+               name="fullname" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user-email"><span class="visually-hidden">Ваш e-mail:</span>Ваш e-mail:</label>
+        <input id="user-email" tabindex="1" type="email"
+               name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="email-text">Т<span class="visually-hidden">Текст письма:</span>Текст письма:</label>
+        <textarea tabindex="-1" name="email-text" id="email-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="btn feedback-btn" aria-label="Отправить нам сообщение" name="submit" type="submit">Отправить</button>
+    </fieldset>
+    </div>
+  </div>
+    </form>
+        </section>
+        <!-- конец форма обратной связи -->
     </main>
-    <!-- Конец main -->
-    <!-- Начало footer -->
+    <!-- конец main -->
+    <!-- начало footer -->
     <footer class="footer">
       <div class="footer-contacts">
         <div class="footer-social">
           <ul>
-            <li><a href="https://vk.com/nerds" class="social-button"><img src="img/vk-icon.png" alt="Вконтакте"/></a> </li>
-            <li><a href="https://facebook.com/nerds" class="social-button"><img src="img/fb-icon.png" alt="Фейбсук"/></a> </li>
-            <li><a href="https://instagram.com/nerds" class="social-button"><img src="img/insta-icon.png" alt="Инстаграм"/></a></li>
+            <li><a href="https://vk.com/nerds" aria-label="Вконтакте студии «Нёрдс»" class="social-button"><img src="img/vk-icon.png" alt="Вконтакте"/></a> </li>
+            <li><a href="https://facebook.com/nerds" aria-label="Фесбук студии «Нёрдс»" class="social-button"><img src="img/fb-icon.png" alt="Фейбсук"/></a> </li>
+            <li><a href="https://instagram.com/nerds" aria-label="Инстаграм студии «Нёрдс»"  class="social-button"><img src="img/insta-icon.png" alt="Инстаграм"/></a></li>
           </ul>
         </div>
       </div>
-      <div class="footer-info">
+      <div class="footer-info" aria-describedby="discount-info">
         <div class="footer-info-text"><b>Давайте дружить, это выгодно!</b></div>
-        <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+        <p id="discount-info" class="discount">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
     <!-- конец footer -->
