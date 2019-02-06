@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог. Студия дизайна «Нёрдс» </title>
+    <link  href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link  href="css/normalize.css" rel="stylesheet">
+    <link  href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <!-- начало header -->
@@ -67,7 +70,7 @@
         <label for="cart">Корзина</label>
       </p>
       <!-- конец фильтр "особенности" -->
-      <button type="submit" aria-label="Показать шаблоны выбранных фильтров" class="btn btn-filters" tabindex="5">Показать</button>
+      <button type="submit" aria-label="Показать шаблоны выбранных фильтров" class="btn-filters" tabindex="5">Показать</button>
       </fieldset>
 
     </form>
@@ -123,8 +126,8 @@
         </section>
         <!--  конец карта Нёрдс -->
         <!-- начало форма обратной связи -->
-        <section class="feedback visually-hidden">
-          <form class="feedback" method="post"
+        <section class="feedback-form">
+          <form class="feedback-form" method="post"
           action="https://echo.nerds.ru">
           <p class="close-btn"><a onClick="close()"  aria-describedby="descriptionClose" aria-label="Кнопка закрыть окно формы отправки" class="btn btn-close">close</a>
            <span class="visually-hidden" id="descriptionClose">Вы закрывает форму отправки  обратной связи</span>
@@ -144,7 +147,7 @@
                name="email" placeholder="email@example.com">
       </p>
       <p>
-        <label for="email-text">Т<span class="visually-hidden">Текст письма:</span>Текст письма:</label>
+        <label for="email-text"><span class="visually-hidden">Текст письма:</span>Текст письма:</label>
         <textarea tabindex="-1" name="email-text" id="email-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
       </p>
       <button class="btn feedback-btn" aria-label="Отправить нам сообщение" name="submit" type="submit">Отправить</button>
@@ -161,9 +164,9 @@
       <div class="footer-contacts">
         <div class="footer-social">
           <ul>
-            <li><a href="https://vk.com/nerds" class="social-button"><img src="img/vk-icon.png" alt="Вконтакте"/></a> </li>
-            <li><a href="https://facebook.com/nerds" class="social-button"><img src="img/fb-icon.png" alt="Фейбсук"/></a> </li>
-            <li><a href="https://instagram.com/nerds" class="social-button"><img src="img/insta-icon.png" alt="Инстаграм"/></a> </li>
+            <li><a href="https://vk.com/nerds" aria-label="Вконтакте студии «Нёрдс»" class="social-button"><img src="img/vk-icon.png" alt="Вконтакте"/></a> </li>
+            <li><a href="https://facebook.com/nerds" aria-label="Фесбук студии «Нёрдс»" class="social-button"><img src="img/fb-icon.png" alt="Фейбсук"/></a> </li>
+            <li><a href="https://instagram.com/nerds" aria-label="Инстаграм студии «Нёрдс»"  class="social-button"><img src="img/insta-icon.png" alt="Инстаграм"/></a></li>
           </ul>
         </div>
       </div>
