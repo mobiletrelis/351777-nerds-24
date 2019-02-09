@@ -2,33 +2,42 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: Verdana, sans-serif;
+  font-family: Roboto, Verdana, sans-serif;
   color: #000000;
   background: #ffffff;
 }
 
-
-/* сброс маркеров списков */
-
-.site-navigation li,
-.service-list li,
-.cart-link,
-.nerds-items li .user-navigation li,
-.footer-social li,
-.nerds-items li,
-.statistics-data li,
-.nerds-orders li,
-.templates-list li {
+li {
   list-style-type: none;
 }
 
-.btn-details {
-  display: inline-block;
-  padding: 10px 30px;
+a:link {
+  text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: Roboto, Verdana, sans-serif;
+}
 
+.header-page-logo {
+  opacity: 1;
+}
+
+.header-page-logo:hover {
+  opacity: 0.6;
+}
+
+.header-page-logo:active {
+  opacity: 0.3;
+}
 /* Стили Header в index.html  */
+.site-navigation li {
+  display: inline;
+}
 
 .site-navigation a {
   text-align: left;
@@ -39,16 +48,15 @@ body {
 }
 
 .main-header,
-.inner-header {
+.inner-header, {
   background: #eeeeee;
 }
 
 .site-navigation a,
 .cart-link a {
-  font-family: Roboto;
   color: #000000;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: normal;
   line-height: 9px;
   text-decoration: none;
 }
@@ -76,43 +84,44 @@ body {
   line-height: 55px;
   text-align: left;
 }
-
-
 /* Стили main для index.html кнопка "заказать" */
-
-.btn {
+.btn,
+.btn-info {
   display: inline-block;
-  padding: 15px 30px;
-}
-
-.btn a,
-.btn-details a {
-  font-family: Roboto;
+  min-height: 50px;
+  padding: 0 20px;
   color: #ffffff;
   font-size: 16px;
-  font-weight: 500;
-  line-height: 5px;
+  font-weight: normal;
+  line-height: 50px;
   text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
+}
+
+.btn-info {
+  min-width: 200px;
+}
+
+.btn {
+ min-width: 120px;
 }
 
 .btn-red,
-.btn-details {
+.btn-info {
   background: #fb565a;
 }
 
-.btn-details:hover,
+.btn-info:hover,
 .btn-red:hover {
   background: #e84044;
   color: #e47174;
 }
 
-.btn-details:active,
+.btn-info:active,
 .btn-red:active {
   background: #d83438;
   color: #e47174;
-  border-top: 2px solid #c22e32;
+  box-shadow: 0px 0 2px 0 #c22e32;
 }
 
 .btn-green {
@@ -127,7 +136,7 @@ body {
 .btn-green:active {
   background: #00ab62;
   color: #43c18b;
-  border-top: 2px solid #009a57;
+  box-shadow: 0px 0 2px 0 #009a57;
 }
 
 .btn-yellow {
@@ -142,44 +151,40 @@ body {
 .btn-yellow:active {
   background: #e6a81d;
   color: #edc261;
-  border-top: 2px solid #cf9719;
+  box-shadow: 0px 0 2px 0 #cf9719;
 }
 
 .service-title {
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: Roboto;
   color: #000000;
   line-height: 9px;
   text-align: left;
 }
 
 .service-desc {
-  font-family: Roboto;
   color: #283136;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 24px;
   text-align: left;
 }
 
-.container {
-  font-family: Roboto;
+.nerds-items {
+  text-align: left;
 }
 
 .nerds-title {
   color: #000000;
   font-size: 45px;
   font-weight: normal;
-  text-align: left;
 }
 
 .nerds-slogan {
   color: #283136;
   font-weight: normal;
   line-height: 24px;
-  text-align: left;
 }
 
 .nerds-orders-title,
@@ -194,65 +199,98 @@ body {
   text-transform: uppercase;
 }
 
-.nerds-orders-list {
-  font-weight: normal;
+.nerds-statistics {
+   font-size: 16px;
+   text-align: center;
 }
 
 .statistics-info-title {
   color: #000000;
-  font-size: 16px;
   font-weight: bold;
   line-height: 24px;
-  /* Приближение из-за подстановки шрифтов */
-  text-align: center;
   text-transform: uppercase;
 }
 
 .statistics-data {
   color: #283136;
-  font-size: 16px;
   font-weight: normal;
   line-height: 18px;
+}
+
+.statistics-data li {
+  display: inline-block;
+  padding: 10px;
   text-align: left;
 }
 
 .data-1,
 .data-2,
 .data-3 {
+  margin:30px 0;
   color: #000000;
   font-size: 45px;
   font-weight: bolder;
   line-height: 24px;
-  text-align: left;
 }
 
+.our-clients {
+  text-align: center;
+}
+
+.our-clients-item li {
+  display: inline-block;
+  padding: 0 20px;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.our-clients-item a:link img {
+   opacity: 0.5;
+}
+
+.our-clients-item a:hover img {
+   opacity: 1;
+}
+
+.our-clients-item a:active img  {
+   opacity: 0.3;
+}
 
 /* Стили блока footer */
+.footer-info,
+.footer-social {
+  float:left;
+}
 
 .footer-contacts {
-  font-family: Roboto;
   color: #000000;
+  text-align: left;
 }
 
 .footer-info-text {
   font-size: 36px;
   font-weight: bolder;
   line-height: 10px;
-  text-align: left;
 }
 
 .discount-info {
   color: #565b5e;
   font-size: 16px;
   font-weight: normal;
-  line-height: 22px;
-  text-align: left;
+}
+
+.footer-social li {
+  display: inline-block;
 }
 
 .footer-social a {
-  float: left;
-  padding: 30px;
-  border-radius: 50px;
+  display: inline-block;
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  line-height: 89px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .footer-social a:link {
@@ -272,19 +310,9 @@ body {
   background: #d7373b;
 }
 
-.footer-social li {
-  vertical-align: middle;
-}
-
-
 /* Cтили catalog.html*/
 
-.inner-header {
-  height: 355x;
-}
-
 .big-title {
-  font-family: Roboto;
   color: #000000;
   font-size: 55px;
   font-weight: normal;
@@ -292,7 +320,6 @@ body {
 }
 
 .filters {
-  font-family: Roboto;
   color: #283136;
 }
 
@@ -303,6 +330,14 @@ body {
   text-align: left;
 }
 
+.filters p:hover {
+   opacity: 0.7
+}
+
+.filters p:active {
+    opacity: 1
+}
+
 .filters ledend {
   font-weight: bold;
   text-transform: uppercase;
@@ -310,7 +345,7 @@ body {
 
 .filters .btn-filters {
   display: inline-block;
-  padding: 10px 60px;
+  padding: 0 20px;
   background: #eeeeee;
   color: #000000;
   font-size: 16px;
@@ -318,7 +353,13 @@ body {
   line-height: 18px;
   border: none;
   text-decoration: none;
+  text-transform: uppercase;
   text-align: center;
+}
+
+.btn-filters {
+  min-width: 200px;
+  min-height: 50px;
 }
 
 .filters .btn-filters:hover {
@@ -328,19 +369,15 @@ body {
 .filters .btn-filters:active,
 .filters .btn-filters:visited {
   background: #e0e0e0;
-  border-top: 1px solid #e0e0e0;
+  box-shadow:  2px 1px solid #e0e0e0;
 }
-
 .filters .btn-filters:active
 
-/* временно скрыте блоки  и форма обратной связи*/
-
+/* временно скрытые блоки  и форма обратной связи*/
 .nerds-location,
 .visually-hidden,
-.nerds-contact {
-  display: none;
-}
-
+.nerds-contact,
 .feedback-form {
   display: none;
 }
+
