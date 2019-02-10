@@ -7,6 +7,10 @@ body {
   background: #ffffff;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 li {
   list-style-type: none;
 }
@@ -23,6 +27,40 @@ p {
   font-family: Roboto, Verdana, sans-serif;
 }
 
+.container-inner {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.container-inner .template-filters,
+.container-inner .templates-shop {
+   margin: 0;
+}
+
+.templates-list .template-item {
+
+   min-width: 360px;
+   min-height: 576px;
+}
+
+.main-navigaton,
+.inner-navigaton {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.main-navigaton .header-page-logo ,
+.main-navigation .site-navigation {
+}
+
+.main-header,
+.inner-header {
+  display: block;
+  background: #eeeeee;
+}
+
 .header-page-logo {
   opacity: 1;
 }
@@ -34,7 +72,7 @@ p {
 .header-page-logo:active {
   opacity: 0.3;
 }
-/* Стили Header в index.html  */
+
 .site-navigation li {
   display: inline;
 }
@@ -47,9 +85,12 @@ p {
   text-align: right;
 }
 
-.main-header,
-.inner-header, {
-  background: #eeeeee;
+.site-navigation {
+
+}
+
+.site-navigation li {
+  margin:0 20px 0 0;
 }
 
 .site-navigation a,
@@ -73,6 +114,7 @@ p {
 
 .site-navigation a:active,
 .cart-link a:active {
+  padding: 0 0 10px 0;
   color: #fb565a;
   border-bottom: 2px solid #fb5559;
 }
@@ -84,7 +126,7 @@ p {
   line-height: 55px;
   text-align: left;
 }
-/* Стили main для index.html кнопка "заказать" */
+
 .btn,
 .btn-info {
   display: inline-block;
@@ -153,6 +195,16 @@ p {
   color: #edc261;
   box-shadow: 0px 0 2px 0 #cf9719;
 }
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.service-list .service-item  {
+   margin: 0 auto;
+}
+
 
 .service-title {
   font-size: 24px;
@@ -256,10 +308,26 @@ p {
    opacity: 0.3;
 }
 
+
+.templates-list {
+   display: flex;
+   flex-wrap: wrap;
+  align-content: center;
+
+}
+
 /* Стили блока footer */
-.footer-info,
-.footer-social {
-  float:left;
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .footer-social {
+  margin:0 50px 0 0;
+  text-align: left;
+}
+.footer .footer-info {
+  vertical-align: middle;
 }
 
 .footer-contacts {
@@ -310,13 +378,12 @@ p {
   background: #d7373b;
 }
 
-/* Cтили catalog.html*/
-
 .big-title {
+  margin:0 auto;
   color: #000000;
   font-size: 55px;
   font-weight: normal;
-  line-height: 55px;
+  line-height: 55px
 }
 
 .filters {
