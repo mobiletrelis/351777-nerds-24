@@ -27,11 +27,16 @@ p {
   font-family: Roboto, Verdana, sans-serif;
 }
 
+fieldset {
+  border:none;
+}
+
 .container-inner {
   display: flex;
   flex-wrap: nowrap;
-
 }
+
+
 
 .container-inner .template-filters,
 .container-inner .templates-shop {
@@ -39,7 +44,7 @@ p {
 }
 
 .templates-list .template-item {
-
+   margin: 0 auto;
    min-width: 360px;
    min-height: 576px;
 }
@@ -47,7 +52,7 @@ p {
 .main-navigaton,
 .inner-navigaton {
   display: flex;
-  flex-wrap: nowrap;
+  align-items: center;
   justify-content: center;
 }
 
@@ -57,7 +62,6 @@ p {
 
 .main-header,
 .inner-header {
-  display: block;
   background: #eeeeee;
 }
 
@@ -79,6 +83,10 @@ p {
 
 .site-navigation a {
   text-align: left;
+}
+
+.cart-link {
+  flex-grow: 8;
 }
 
 .cart-link a {
@@ -196,6 +204,7 @@ p {
   box-shadow: 0px 0 2px 0 #cf9719;
 }
 
+
 .service-list {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -223,9 +232,14 @@ p {
   text-align: left;
 }
 
+
 .nerds-items {
-  text-align: left;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .nerds-title {
   color: #000000;
@@ -287,10 +301,14 @@ p {
 
 .our-clients {
   text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
 }
 
 .our-clients-item li {
   display: inline-block;
+  margin: 0 20px;
   padding: 0 20px;
   vertical-align: middle;
   line-height: 50px;
@@ -312,22 +330,24 @@ p {
 .templates-list {
    display: flex;
    flex-wrap: wrap;
-  align-content: center;
-
 }
+
+.templates-list .template-item {
+  padding: 0;
+  background: #ffffff;
+}
+
 
 /* Стили блока footer */
 .footer {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .footer .footer-social {
   margin:0 50px 0 0;
-  text-align: left;
-}
-.footer .footer-info {
-  vertical-align: middle;
+  text-align: center;
 }
 
 .footer-contacts {
@@ -338,7 +358,7 @@ p {
 .footer-info-text {
   font-size: 36px;
   font-weight: bolder;
-  line-height: 10px;
+  line-height: 36px;
 }
 
 .discount-info {
@@ -353,12 +373,11 @@ p {
 
 .footer-social a {
   display: inline-block;
-  width: 79px;
-  height: 79px;
+  width: 80px;
+  height: 80px;
+  line-height: 90px;
   border-radius: 50%;
-  line-height: 89px;
   text-align: center;
-  vertical-align: middle;
 }
 
 .footer-social a:link {
@@ -379,11 +398,10 @@ p {
 }
 
 .big-title {
-  margin:0 auto;
   color: #000000;
   font-size: 55px;
   font-weight: normal;
-  line-height: 55px
+  text-align: center;
 }
 
 .filters {
@@ -405,7 +423,7 @@ p {
     opacity: 1
 }
 
-.filters ledend {
+.filters legend {
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -438,13 +456,8 @@ p {
   background: #e0e0e0;
   box-shadow:  2px 1px solid #e0e0e0;
 }
-.filters .btn-filters:active
 
-/* временно скрытые блоки  и форма обратной связи*/
-.nerds-location,
-.visually-hidden,
-.nerds-contact,
-.feedback-form {
+.visually-hidden{
   display: none;
 }
 

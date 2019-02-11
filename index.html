@@ -17,22 +17,22 @@
           <li><a href="clients.html" aria-label="Клиенты студии дизайна «Нёрдс»">Новости</a></li>
           <li><a href="catalog.html" aria-label="Каталог товаров студии дизайна «Нёрдс»">Магазин</a></li>
           <li><a href="contacts.html" aria-label="Контакты студии дизайна «Нёрдс»">Контакты</a></li>
-          <li class="cart-link"><a href="cart.html" aria-label="Корзина заказов" class="cart"><img src="img/cart-icon.png" width="15" height="15" alt="Корзина"/>Корзина</a></li>
         </ul>
+        <ul class="user-navigation"><li class="cart-link"><a href="cart.html" aria-label="Корзина заказов" class="cart"><img src="img/cart-icon.png" width="15" height="15" alt="Корзина"/>Корзина</a></li></ul>
       </nav>
       <h1 class="visually-hidden">Студия дизайна «Нёрдс»</h1>
-    </header>
-    <!-- конец header -->
-    <!-- начало main -->
-    <main class="container">
-      <section class="top-banner">
+       <section class="top-banner">
         <div class="banner-content" aria-describedby="studio-desc">
           <div class="slogan">Долго, дорого,<br/> скурпулезно.</div>
            <div id="studio-desc" class="details">Математически выверенный дизайн <br/> для вашего сайта и мобильного приложения</div>
            <p><a class="btn-info btn-red" href="info.html" aria-label="Узнать больше о услугах студии дизайна «Нёрдс»">Узнать больше</a></p>
-           <p class="slider" aria-label="Баннер - Слайдшоу"><img src="img/slide1.png" width="698" height="413" alt=""/></p>
+           <!--p class="slider" aria-label="Баннер - Слайдшоу"><img src="img/slide1.png" width="698" height="413" alt=""/></p-->
         </div>
       </section>
+    </header>
+    <!-- конец header -->
+    <!-- начало main -->
+    <main class="container">
       <section class="our-services">
         <ul class="service-list">
           <li class="service-item">
@@ -66,7 +66,7 @@
         <ul class="nerds-items">
           <li class="nerds-description">
             <p class="nerds-title">Мы-маленькая, но гордая<br/>дизайн-студия из Краснодара.</p>
-            <p class="nerds-slogan">Исповедуем принцыпы минимализма и чистоты. Ставим математический расчет<br/>
+            <p class="nerds-slogan">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br/>
             выше креатива. Работаем не покладая рук, как роботы.
             </p>
             <h4 class="nerds-orders-title">Выполняем закаы на разраотку: </h4>
@@ -91,15 +91,15 @@
       <!-- начало наши клиенты -->
       <section class="our-clients">
         <ul class="our-clients-item">
-          <li><a href="https://htmlacademy.ru" aria-label="HTML Academy клиент студии «Нёрдс»"><img src="img/logo-1.png" alt="HTML Academy"/></a></li>
-          <li><a href="https://borodinsky.ru" aria-label="Бородинский клиент студии «Нёрдс»"><img src="img/logo-2.png" alt="Бородинский"/></a></li>
-          <li><a href="https://pink.ru" aria-label="Пинк клиент студии «Нёрдс»"><img src="img/logo-3.png" alt="Пинк"/></a></li>
-          <li><a href="https://misha.ru" aria-label="Мишка клиент студии «Нёрдс»"><img src="img/logo-4.png" alt="Мишка"/></a></li>
+          <li><a href="https://htmlacademy.ru" aria-label="HTML Academy клиент студии «Нёрдс»" target="_blank"><img src="img/logo-1.png" alt="HTML Academy"/></a></li>
+          <li><a href="https://borodinsky.ru" aria-label="Бородинский клиент студии «Нёрдс»" target="_blank"><img src="img/logo-2.png" alt="Бородинский"/></a></li>
+          <li><a href="https://pink.ru" aria-label="Пинк клиент студии «Нёрдс»" target="_blank"><img src="img/logo-3.png" alt="Пинк"/></a></li>
+          <li><a href="https://misha.ru" aria-label="Мишка клиент студии «Нёрдс»" target="_blank"><img src="img/logo-4.png" alt="Мишка"/></a></li>
         </ul>
         </section>
          <!--  конец наши клиенты -->
          <!--  начало  карта Нёрдс -->
-        <section class="nerds-location">
+        <section class="nerds-location visually-hidden">
             <div class="nerds-contact"  aria-labelledby="address-studio" aria-describedby="address-info">
               <div class="nerds-title" id="address-studio">Nёrds design studio</div>
               <p id="address-info" class="nerds-address">
@@ -112,7 +112,7 @@
         </section>
         <!--  конец карта Нёрдс -->
         <!-- начало форма обратной связи -->
-        <section class="feedback-form">
+        <section class="feedback-form visually-hidden">
           <form class="feedback-form" name="feedback-form" method="post"
           action="https://echo.nerds.ru">
           <p class="close-btn"><a onclick="close()" aria-describedby="descriptionClose" aria-label="Кнопка закрыть окно формы отправки" class="btn btn-close">close</a>
@@ -123,18 +123,18 @@
           <fieldset>
             <ledend>Напишите нам</ledend>
       <p>
-        <label for="fullname"><span class="visually-hidden">Ваше имя:</span>Ваше имя:</label>
-        <input id="fullname" tabindex="0" type="text"
+        <label for="fullname">Ваше имя:</label>
+        <input id="fullname" aria-label="Имя Фамилия" tabindex="0" type="text"
                name="fullname" placeholder="Имя Фамилия">
       </p>
       <p>
-        <label for="user-email"><span class="visually-hidden">Ваш e-mail:</span>Ваш e-mail:</label>
-        <input id="user-email" tabindex="1" type="email"
+        <label for="user-email">Ваш e-mail:</label>
+        <input id="user-email" aria-label="Ваш e-mail:" tabindex="1" type="email"
                name="email" placeholder="email@example.com">
       </p>
       <p>
-        <label for="email-text"><span class="visually-hidden">Текст письма:</span>Текст письма:</label>
-        <textarea tabindex="-1" name="email-text" id="email-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <label for="email-text">Текст письма:</label>
+        <textarea tabindex="-1" aria-label="Текст письма" name="email-text" id="email-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
       </p>
       <button class="btn feedback-btn" aria-label="Отправить нам сообщение" name="submit" type="submit">Отправить</button>
     </fieldset>
@@ -150,9 +150,9 @@
       <div class="footer-contacts">
         <div class="footer-social">
           <ul>
-            <li><a href="https://vk.com/nerds" aria-label="Вконтакте студии «Нёрдс»" class="social-button"><img src="img/vk-icon.png" alt="Вконтакте"/></a> </li>
-            <li><a href="https://facebook.com/nerds" aria-label="Фесбук студии «Нёрдс»" class="social-button"><img src="img/fb-icon.png" alt="Фейбсук"/></a> </li>
-            <li><a href="https://instagram.com/nerds" aria-label="Инстаграм студии «Нёрдс»"  class="social-button"><img src="img/insta-icon.png" alt="Инстаграм"/></a></li>
+            <li><a href="https://vk.com/nerds" aria-label="Вконтакте студии «Нёрдс»" class="social-button" target="_blank"><img src="img/vk-icon.png" alt="Вконтакте"/></a> </li>
+            <li><a href="https://facebook.com/nerds" aria-label="Фесбук студии «Нёрдс»" class="social-button" target="_blank"><img src="img/fb-icon.png" alt="Фейбсук"/></a> </li>
+            <li><a href="https://instagram.com/nerds" aria-label="Инстаграм студии «Нёрдс»"  class="social-button" target="_blank"><img src="img/insta-icon.png" alt="Инстаграм"/></a></li>
           </ul>
         </div>
       </div>
