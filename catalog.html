@@ -10,6 +10,7 @@
 <body>
     <!-- начало header -->
     <header class="inner-header">
+      <div class="container">
       <nav class="inner-navigaton">
         <a class="header-page-logo" aria-label="Логотип Студия дизайна «Нёрдс»" href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Студия дизайна «Нёрдс»"></a>
         <ul class="site-navigation">
@@ -21,10 +22,11 @@
         <ul class="user-navigation"><li class="cart-link"><a href="cart.html" aria-label="Корзина заказов" class="cart"><img src="img/cart-icon.png" width="15" height="15" alt="Корзина"/>Корзина</a></li></ul>
       </nav>
         <h1 class="big-title">Магазин готовых шаблонов</h1>
+        </div>
     </header>
     <!-- конец header -->
     <!-- начало main -->
-    <main class="container-inner">
+    <main class="container container-inner">
       <aside class="template-filters">
         <section class="filters">
            <form name="filters-form" method="post"
@@ -70,7 +72,6 @@
       <!-- конец фильтр "особенности" -->
       <button type="submit" aria-label="Показать шаблоны выбранных фильтров" class="btn-filters" tabindex="8">Показать</button>
       </fieldset>
-
     </form>
       </section>
       </aside>
@@ -108,6 +109,12 @@
               <a href="catalog-item.html" aria-label="Дизайн шаблон магазина Кваст" target="_blank"><img src="img/img-kvast.jpg" width="360" height="576"  alt="Кваст"></a>
             </p>
           </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+          <li class="pagination-item pagination-item-current">2<a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следущая</a></li>
         </ul>
       </section>
            <!--  начало  карта Нёрдс -->
@@ -158,19 +165,17 @@
     </main>
     <!-- конец main -->
     <!-- начало footer -->
-    <footer class="footer">
-      <div class="footer-contacts">
-        <div class="footer-social">
-          <ul>
+    <footer>
+      <div class="container footer">
+          <ul class="footer-social">
             <li><a href="https://vk.com/nerds" aria-label="Вконтакте студии «Нёрдс»" class="social-button" target="_blank"><img src="img/vk-icon.png" alt="Вконтакте"/></a> </li>
             <li><a href="https://facebook.com/nerds" aria-label="Фесбук студии «Нёрдс»" class="social-button" target="_blank"><img src="img/fb-icon.png" alt="Фейбсук"/></a> </li>
             <li><a href="https://instagram.com/nerds" aria-label="Инстаграм студии «Нёрдс»"  class="social-button" target="_blank"><img src="img/insta-icon.png" alt="Инстаграм"/></a></li>
           </ul>
-        </div>
-      </div>
-      <div class="footer-info" aria-describedby="discount-info">
-        <div class="footer-info-text"><b>Давайте дружить, это выгодно!</b></div>
-        <p id="discount-info" class="discount">Скидка 10% для друзей из социальных сетей.</p>
+          <section class="footer-info" aria-describedby="discount-info">
+            <p class="footer-info-text">Давайте дружить, это выгодно!</p>
+            <p id="discount-info" class="discount">Скидка 10% для друзей из социальных сетей.</p>
+          </section>
       </div>
     </footer>
     <!-- конец footer -->

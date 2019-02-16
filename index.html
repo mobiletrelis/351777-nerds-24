@@ -10,12 +10,13 @@
 <body>
     <!-- начало header -->
     <header class="main-header">
+      <div class="container">
       <nav class="main-navigaton">
         <a onClick="window.location.reload()" class="header-page-logo" aria-label="Логотип студии дизайна «Нёрдс»" href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Студия дизайна «Нёрдс»"></a>
         <ul class="site-navigation">
-          <li><a href="studio.html" aria-label="Информация о студии дизайна «Нёрдс»">Информация</a></li>
-          <li><a href="clients.html" aria-label="Клиенты студии дизайна «Нёрдс»">Новости</a></li>
-          <li><a href="catalog.html" aria-label="Каталог товаров студии дизайна «Нёрдс»">Магазин</a></li>
+          <li><a href="studio.html" aria-label="Студии дизайна «Нёрдс»">Студия</a></li>
+          <li><a href="clients.html" aria-label="Клиенты студии дизайна «Нёрдс»">Клиенты</a></li>
+          <li><a href="catalog.html" aria-label="Магазин студии дизайна «Нёрдс»">Магазин</a></li>
           <li><a href="contacts.html" aria-label="Контакты студии дизайна «Нёрдс»">Контакты</a></li>
         </ul>
         <ul class="user-navigation"><li class="cart-link"><a href="cart.html" aria-label="Корзина заказов" class="cart"><img src="img/cart-icon.png" width="15" height="15" alt="Корзина"/>Корзина</a></li></ul>
@@ -23,12 +24,14 @@
       <h1 class="visually-hidden">Студия дизайна «Нёрдс»</h1>
        <section class="top-banner">
         <div class="banner-content" aria-describedby="studio-desc">
-          <div class="slogan">Долго, дорого,<br/> скурпулезно.</div>
-           <div id="studio-desc" class="details">Математически выверенный дизайн <br/> для вашего сайта и мобильного приложения</div>
-           <p><a class="btn-info btn-red" href="info.html" aria-label="Узнать больше о услугах студии дизайна «Нёрдс»">Узнать больше</a></p>
-           <!--p class="slider" aria-label="Баннер - Слайдшоу"><img src="img/slide1.png" width="698" height="413" alt=""/></p-->
-        </div>
+          <div class="banner-text">
+            <p class="slogan">Долго, дорого,<br/> скурпулезно.</p>
+             <p id="studio-desc" class="details">Математически выверенный дизайн <br/> для вашего сайта и мобильного приложения</p>
+             <p><a class="btn-info btn-red" href="info.html" aria-label="Узнать больше о услугах студии дизайна «Нёрдс»">Узнать больше</a></p>
+         </div>
+         <p class="slider" aria-label="Баннер - Слайдшоу"><img src="img/slide1.png" width="698" height="413" alt="Баннер - Слайдшоу"/></p>
       </section>
+      </div>
     </header>
     <!-- конец header -->
     <!-- начало main -->
@@ -146,19 +149,17 @@
     </main>
     <!-- конец main -->
     <!-- начало footer -->
-    <footer class="footer">
-      <div class="footer-contacts">
-        <div class="footer-social">
-          <ul>
+    <footer>
+      <div class="container footer">
+          <ul class="footer-social">
             <li><a href="https://vk.com/nerds" aria-label="Вконтакте студии «Нёрдс»" class="social-button" target="_blank"><img src="img/vk-icon.png" alt="Вконтакте"/></a> </li>
             <li><a href="https://facebook.com/nerds" aria-label="Фесбук студии «Нёрдс»" class="social-button" target="_blank"><img src="img/fb-icon.png" alt="Фейбсук"/></a> </li>
             <li><a href="https://instagram.com/nerds" aria-label="Инстаграм студии «Нёрдс»"  class="social-button" target="_blank"><img src="img/insta-icon.png" alt="Инстаграм"/></a></li>
           </ul>
-        </div>
-      </div>
-      <div class="footer-info" aria-describedby="discount-info">
-        <div class="footer-info-text"><b>Давайте дружить, это выгодно!</b></div>
-        <p id="discount-info" class="discount">Скидка 10% для друзей из социальных сетей.</p>
+          <section class="footer-info" aria-describedby="discount-info">
+            <p class="footer-info-text">Давайте дружить, это выгодно!</p>
+            <p id="discount-info" class="discount">Скидка 10% для друзей из социальных сетей.</p>
+          </section>
       </div>
     </footer>
     <!-- конец footer -->
