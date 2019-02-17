@@ -19,7 +19,7 @@
           <li><a href="catalog.html" aria-label="Магазин студии дизайна «Нёрдс»">Магазин</a></li>
           <li><a href="contacts.html" aria-label="Контакты студии дизайна «Нёрдс»">Контакты</a></li>
         </ul>
-        <ul class="user-navigation"><li class="cart-link"><a href="cart.html" aria-label="Корзина заказов" class="cart"><img src="img/cart-icon.png" width="15" height="15" alt="Корзина"/>Корзина</a></li></ul>
+        <ul class="user-navigation"><li class="cart-link"><a href="cart.html" aria-label="Корзина заказов" class="cart">Корзина</a></li></ul>
       </nav>
       <h1 class="visually-hidden">Студия дизайна «Нёрдс»</h1>
        <section class="top-banner">
@@ -80,7 +80,7 @@
             </ul>
           </li>
           <li class="nerds-statistics">
-           <div class="statistics-info"><img src="img/nerds-illustration.png" width="360" height="208" alt="Статистика студия дизайна «Нёрдс»"/></div>
+           <p class="statistics-info"><img src="img/nerds-illustration.png" width="360" height="208" alt="Статистика студия дизайна «Нёрдс»"/></p>
             <p class="statistics-info-title">С 2004 года любим точность во всем:</p>
             <ul class="statistics-data">
               <li><div class="data-1"/>146%</div><p>Уровень<br/> самоотдачи</p></li>
@@ -115,36 +115,28 @@
         </section>
         <!--  конец карта Нёрдс -->
         <!-- начало форма обратной связи -->
-        <section class="feedback-form visually-hidden">
-          <form class="feedback-form" name="feedback-form" method="post"
-          action="https://echo.nerds.ru">
-          <p class="close-btn"><a onclick="close()" aria-describedby="descriptionClose" aria-label="Кнопка закрыть окно формы отправки" class="btn btn-close">close</a>
+      <section class="feedback-form-container">
+          <form class="feedback-form" method="post"
+          action="https://echo.nerds.ru" role="group" aria-labelledby="feedback-form">
+          <p class="close-btn"><a onClick="close()"  aria-describedby="descriptionClose" aria-label="Кнопка закрыть окно формы отправки">Закрыть</a>
            <span class="visually-hidden" id="descriptionClose">Вы закрывает форму отправки  обратной связи</span>
           </p>
-          <div role="group" aria-labelledby="feedback-form">
-            <div id="feedback-form">
-          <fieldset>
-            <ledend>Напишите нам</ledend>
-      <p>
-        <label for="fullname">Ваше имя:</label>
-        <input id="fullname" aria-label="Имя Фамилия" tabindex="0" type="text"
-               name="fullname" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="user-email">Ваш e-mail:</label>
-        <input id="user-email" aria-label="Ваш e-mail:" tabindex="1" type="email"
-               name="email" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="email-text">Текст письма:</label>
-        <textarea tabindex="-1" aria-label="Текст письма" name="email-text" id="email-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      </p>
-      <button class="btn feedback-btn" aria-label="Отправить нам сообщение" name="submit" type="submit">Отправить</button>
-    </fieldset>
-    </div>
-  </div>
+          <fieldset id="feedback-form">
+            <ul>
+              <li class="feedback-title"><legend>Напишите нам</legend></li>
+              <li class="inputs"><label for="fullname">Ваше имя:</label>
+        <input id="fullname" aria-label="Ваше имя"  tabindex="0" type="text"
+               name="fullname" placeholder="Имя Фамилия"></li>
+              <li class="inputs"><label for="user-email">Ваш e-mail:</label>
+        <input id="user-email" aria-label="Ваш e-mail" tabindex="1" type="email"
+               name="email" placeholder="email@example.com"></li>
+              <li class="textarea"><label for="email-text">Текст письма:</label>
+        <textarea tabindex="-1" aria-label="Текст письма"  name="email-text" id="email-text" placeholder="В свободной форме"></textarea></li>
+             <li class="send-button"><button class="btn feedback-btn" aria-label="Отправить нам сообщение" name="submit" type="submit">Отправить</button></li>
+            </ul>
+       </fieldset>
     </form>
-        </section>
+  </section>
         <!-- конец форма обратной связи -->
     </main>
     <!-- конец main -->
