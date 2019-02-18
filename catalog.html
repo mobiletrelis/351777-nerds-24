@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Каталог.Студия дизайна «Нёрдс» </title>
-    <link  href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link  href="css/normalize.css" rel="stylesheet">
-    <link  href="css/style.css" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Каталог.Студия дизайна «Нёрдс» </title>
+<link  href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link  href="css/normalize.css" rel="stylesheet">
+<link  href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <!-- начало header -->
@@ -19,7 +19,7 @@
           <li><a href="catalog.html" aria-label="Каталог товаров студии дизайна «Нёрдс»">Магазин</a></li>
           <li><a href="contacts.html" aria-label="Контакты студии дизайна «Нёрдс»">Контакты</a></li>
         </ul>
-        <ul class="user-navigation"><li class="cart-link"><a href="cart.html" aria-label="Корзина заказов" class="cart">Корзина</a></li></ul>
+        <ul class="user-navigation"><li class="cart-link"><a href="cart.html" aria-label="Корзина заказов" class="cart"><img src="img/cart-icon.png" width="15" height="15" alt="Корзина"/>Корзина</a></li></ul>
       </nav>
         <h1 class="big-title">Магазин готовых шаблонов</h1>
         </div>
@@ -33,7 +33,7 @@
           action="https://echo.nerds.ru">
           <fieldset>
             <!-- начало фильтр "особенности" -->
-            <legend>Сетка:</legend>
+            <strong>Сетка:</strong>
       <p class="radio">
         <input type="radio" aria-label="Сетка адаптивная" id="adaptive"  name="adaptive" value="adaptive"  tabindex="0">
         <label for="adaptive">Адаптивная</label>
@@ -48,7 +48,7 @@
       </p>
       <!-- конец фильтр "сетка" -->
       <!-- начало фильтр "особенности" -->
-      <legend>Особенности:</legend>
+      <strong>Особенности:</strong>
       <p class="checkbox">
         <input type="checkbox" aria-label="Особенность слайдер" id="slider" name="slider" checked tabindex="3">
         <label for="slider">Слайдер</label>
@@ -75,6 +75,7 @@
     </form>
       </section>
       </aside>
+      <!-- начало список шаблонов -->
       <section class="templates-shop">
         <h2 class="visually-hidden">Каталог дизайнов</h2>
         <h3 class="nerds-title visually-hidden">Мы-маленькая, но гордая<br/>дизайн-студия из Краснодара.</h3>
@@ -130,11 +131,11 @@
         </ul>
       </section>
     </main>
-    <!-- конец main -->
+    <!-- конец список шаблонов -->
      <!--  начало  карта Нёрдс -->
         <section class="nerds-location visually-hidden">
             <div class="nerds-contact"  aria-labelledby="address-studio" aria-describedby="address-info">
-              <div class="nerds-title" id="address-studio">Nёrds design studio</div>
+              <p class="nerds-title" id="address-studio">Nёrds design studio</p>
               <p id="address-info" class="nerds-address">
                   191186 Санкт-Петербург,<br/>
                   ул. Б. Конюшенная, д.19/8<br/>
@@ -147,200 +148,13 @@
         <!-- начало форма обратной связи -->
         <section class="feedback-form-container">
           <form class="feedback-form" method="post"
-          action="https://echo.nerds.ru" role="group" aria-labelledby="feedback-form">
+          action="https://echo.nerds.ru"  aria-label="форма обратной связи">
           <p class="close-btn"><a onClick="close()"  aria-describedby="descriptionClose" aria-label="Кнопка закрыть окно формы отправки">Закрыть</a>
            <span class="visually-hidden" id="descriptionClose">Вы закрывает форму отправки  обратной связи</span>
           </p>
-          <fieldset id="feedback-form">
-            <ul>
-              <li class="feedback-title"><legend>Напишите нам</legend></li>
-              <li class="inputs"><label for="fullname">Ваше имя:</label>
-        <input id="fullname" aria-label="Ваше имя"  tabindex="0" type="text"
-               name="fullname" placeholder="Имя Фамилия"></li>
-              <li class="inputs"><label for="user-email">Ваш e-mail:</label>
-        <input id="user-email" aria-label="Ваш e-mail" tabindex="1" type="email"
-               name="email" placeholder="email@example.com"></li>
-              <li class="textarea"><label for="email-text">Текст письма:</label>
-        <textarea tabindex="-1" aria-label="Текст письма"  name="email-text" id="email-text" placeholder="В свободной форме"></textarea></li>
-             <li class="send-button"><button class="btn feedback-btn" aria-label="Отправить нам сообщение" name="submit" type="submit">Отправить</button></li>
-            </ul>
-       </fieldset>
-    </form>
-  </section>
-    <!-- конец форма обратной связи -->
-    <!-- начало footer -->
-    <footer>
-      <div class="container footer">
-          <ul class="footer-social">
-            <li><a href="https://vk.com/nerds" aria-label="Вконтакте студии «Нёрдс»" class="social-button" target="_blank"><img src="img/vk-icon.png" alt="Вконтакте"/></a> </li>
-            <li><a href="https://facebook.com/nerds" aria-label="Фесбук студии «Нёрдс»" class="social-button" target="_blank"><img src="img/fb-icon.png" alt="Фейбсук"/></a> </li>
-            <li><a href="https://instagram.com/nerds" aria-label="Инстаграм студии «Нёрдс»"  class="social-button" target="_blank"><img src="img/insta-icon.png" alt="Инстаграм"/></a></li>
-          </ul>
-          <section class="footer-info" aria-describedby="discount-info">
-            <p class="footer-info-text">Давайте дружить, это выгодно!</p>
-            <p id="discount-info" class="discount">Скидка 10% для друзей из социальных сетей.</p>
-          </section>
-      </div>
-    </footer>
-    <!-- конец footer -->
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Каталог.Студия дизайна «Нёрдс» </title>
-    <link  href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link  href="css/normalize.css" rel="stylesheet">
-    <link  href="css/style.css" rel="stylesheet">
-</head>
-<body>
-    <!-- начало header -->
-    <header class="inner-header">
-      <div class="container">
-      <nav class="inner-navigaton">
-        <a class="header-page-logo" aria-label="Логотип Студия дизайна «Нёрдс»" href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Студия дизайна «Нёрдс»"></a>
-        <ul class="site-navigation">
-          <li><a href="studio.html" aria-label="Информация о студии дизайна «Нёрдс»">Информация</a></li>
-          <li><a href="clients.html" aria-label="Клиенты студии дизайна «Нёрдс»">Новости</a></li>
-          <li><a href="catalog.html" aria-label="Каталог товаров студии дизайна «Нёрдс»">Магазин</a></li>
-          <li><a href="contacts.html" aria-label="Контакты студии дизайна «Нёрдс»">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation"><li class="cart-link"><a href="cart.html" aria-label="Корзина заказов" class="cart">Корзина</a></li></ul>
-      </nav>
-        <h1 class="big-title">Магазин готовых шаблонов</h1>
-        </div>
-    </header>
-    <!-- конец header -->
-    <!-- начало main -->
-    <main class="container container-inner">
-      <aside class="template-filters">
-        <section class="filters">
-           <form name="filters-form" method="post"
-          action="https://echo.nerds.ru">
           <fieldset>
-            <!-- начало фильтр "особенности" -->
-            <legend>Сетка:</legend>
-      <p class="radio">
-        <input type="radio" aria-label="Сетка адаптивная" id="adaptive"  name="adaptive" value="adaptive"  tabindex="0">
-        <label for="adaptive">Адаптивная</label>
-      </p>
-      <p class="radio">
-        <input type="radio" aria-label="Сетка фиксированная" id="static" name="static" value="static" tabindex="1">
-        <label for="static">Фиксированная</label>
-      </p>
-      <p class="radio">
-        <input type="radio" aria-label="Сетка резиновая" id="responsive" name="responsive" value="responsive" tabindex="2">
-        <label for="responsive">Резиновая</label>
-      </p>
-      <!-- конец фильтр "сетка" -->
-      <!-- начало фильтр "особенности" -->
-      <legend>Особенности:</legend>
-      <p class="checkbox">
-        <input type="checkbox" aria-label="Особенность слайдер" id="slider" name="slider" checked tabindex="3">
-        <label for="slider">Слайдер</label>
-      </p>
-      <p class="checkbox">
-        <input type="checkbox" aria-label="Особенность блок преимуществ"  id="feature-block" name="feature-block" tabindex="4">
-        <label for="feature-block">Блок преимуществ</label>
-      </p>
-      <p class="checkbox">
-        <input type="checkbox" aria-label="Особенность новости"  id="news" name="news" checked tabindex="5">
-        <label for="news">Новости</label>
-      </p>
-      <p class="checkbox">
-        <input type="checkbox" aria-label="Особенность галерея"  id="gallery" name="gallery" tabindex="6">
-        <label for="gallery">Галерея</label>
-      </p>
-      <p class="checkbox">
-        <input type="checkbox" aria-label="Особенность - корзина" id="cart" name="cart" tabindex="7">
-        <label for="cart">Корзина</label>
-      </p>
-      <!-- конец фильтр "особенности" -->
-      <button type="submit" aria-label="Показать шаблоны выбранных фильтров" class="btn-filters" tabindex="8">Показать</button>
-      </fieldset>
-    </form>
-      </section>
-      </aside>
-      <section class="templates-shop">
-        <h2 class="visually-hidden">Каталог дизайнов</h2>
-        <h3 class="nerds-title visually-hidden">Мы-маленькая, но гордая<br/>дизайн-студия из Краснодара.</h3>
-        <ul class="templates-list">
-          <li class="template-item">
-            <div class="decor-container">
-            <p class="template-image">
-              <a href="catalog-item.html" aria-label="Дизайн шаблон магазина Седона" target="_blank"><img src="img/img-sedona.jpg" width="360" height="576" alt="Седона"></a>
-            </p>
-          </div>
-          </li>
-          <li class="template-item">
-            <div class="decor-container">
-            <p class="template-image">
-              <a href="catalog-item.html" aria-label="Дизайн шаблон сайта Пинк" target="_blank"><img src="img/img-pink.jpg" width="360" height="576" alt="Пинк"></a>
-            </p>
-          </div>
-          </li>
-          <li class="template-item">
-            <div class="decor-container">
-            <p class="template-image">
-              <a href="catalog-item.html" aria-label="Дизайн шаблон Барбершоп «Бородинский»" target="_blank"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп «Бородинский»"></a>
-            </p>
-          </div>
-          </li>
-          <li class="template-item">
-            <div class="decor-container">
-            <p class="template-image">
-              <a href="catalog-item.html" aria-label="Дизайн шаблон магазина Мишка" target="_blank"><img src="img/img-mishka.jpg" width="360" height="576"  alt="Мишка"></a>
-            </p>
-          </div>
-          </li>
-          <li class="template-item">
-            <div class="decor-container">
-            <p class="template-image">
-              <a href="catalog-item.html" aria-label="Дизайн шаблон магазина А плюс" target="_blank"><img src="img/img-aplus.jpg" width="360" height="576"  alt="А+"></a>
-            </p>
-          </div>
-          </li>
-          <li class="template-item">
-            <div class="decor-container">
-            <p class="template-image">
-              <a href="catalog-item.html" aria-label="Дизайн шаблон магазина Кваст" target="_blank"><img src="img/img-kvast.jpg" width="360" height="576"  alt="Кваст"></a>
-            </p>
-          </div>
-          </li>
-        </ul>
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item pagination-item-next"><a href="#">Следущая</a></li>
-        </ul>
-      </section>
-    </main>
-    <!-- конец main -->
-     <!--  начало  карта Нёрдс -->
-        <section class="nerds-location visually-hidden">
-            <div class="nerds-contact"  aria-labelledby="address-studio" aria-describedby="address-info">
-              <div class="nerds-title" id="address-studio">Nёrds design studio</div>
-              <p id="address-info" class="nerds-address">
-                  191186 Санкт-Петербург,<br/>
-                  ул. Б. Конюшенная, д.19/8<br/>
-                  +7 (812) 275-75-75
-               </p>
-              <a href="mailto:contacts@nerds.ru" aria-label="Наш email contacts@nerds.ru" class="btn btn-contacts">Напишите нам</a>
-            </div>
-        </section>
-        <!--  конец карта Нёрдс -->
-        <!-- начало форма обратной связи -->
-        <section class="feedback-form-container">
-          <form class="feedback-form" method="post"
-          action="https://echo.nerds.ru" role="group" aria-labelledby="feedback-form">
-          <p class="close-btn"><a onClick="close()"  aria-describedby="descriptionClose" aria-label="Кнопка закрыть окно формы отправки">Закрыть</a>
-           <span class="visually-hidden" id="descriptionClose">Вы закрывает форму отправки  обратной связи</span>
-          </p>
-          <fieldset id="feedback-form">
             <ul>
-              <li class="feedback-title"><legend>Напишите нам</legend></li>
+              <li class="feedback-title">Напишите нам:</li>
               <li class="inputs"><label for="fullname">Ваше имя:</label>
         <input id="fullname" aria-label="Ваше имя"  tabindex="0" type="text"
                name="fullname" placeholder="Имя Фамилия"></li>
