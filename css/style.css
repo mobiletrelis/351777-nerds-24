@@ -372,6 +372,7 @@ fieldset {
 .templates-list {
   margin: 0;
   padding: 0;
+  text-align:right;
 }
 
 .template-item {
