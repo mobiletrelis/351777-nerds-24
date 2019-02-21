@@ -14,9 +14,9 @@
       <nav class="main-navigaton">
         <a onClick="window.location.reload()" class="header-page-logo" aria-label="Логотип студии дизайна «Нёрдс»" href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Студия дизайна «Нёрдс»"></a>
         <ul class="site-navigation">
-          <li><a href="studio.html" aria-label="Студии дизайна «Нёрдс»">Студия</a></li>
+          <li><a href="studio.html" aria-label="Информация о студии дизайна «Нёрдс»">Студя</a></li>
           <li><a href="clients.html" aria-label="Клиенты студии дизайна «Нёрдс»">Клиенты</a></li>
-          <li><a href="catalog.html" aria-label="Магазин студии дизайна «Нёрдс»">Магазин</a></li>
+          <li><a href="catalog.html" aria-label="Каталог товаров студии дизайна «Нёрдс»">Магазин</a></li>
           <li><a href="contacts.html" aria-label="Контакты студии дизайна «Нёрдс»">Контакты</a></li>
         </ul>
         <ul class="user-navigation"><li class="cart-link"><a href="cart.html" aria-label="Корзина заказов" class="cart">Корзина</a></li></ul>
@@ -101,21 +101,8 @@
         </ul>
         </section>
          <!--  конец наши клиенты -->
-         <!--  начало  карта Нёрдс -->
-        <section class="nerds-location visually-hidden">
-            <div class="nerds-contact"  aria-labelledby="address-studio" aria-describedby="address-info">
-              <p class="nerds-title" id="address-studio">Nёrds design studio</p>
-              <p id="address-info" class="nerds-address">
-                  191186 Санкт-Петербург,<br/>
-                  ул. Б. Конюшенная, д.19/8<br/>
-                  +7 (812) 275-75-75
-               </p>
-              <a href="mailto:contacts@nerds.ru" aria-label="Наш email contacts@nerds.ru" class="btn btn-contacts">Напишите нам</a>
-            </div>
-        </section>
-        <!--  конец карта Нёрдс -->
         <!-- начало форма обратной связи -->
-      <section class="feedback-form-container">
+      <section class="feedback-form-container visually-hidden">
           <form class="feedback-form" method="post"
           action="https://echo.nerds.ru" aria-label="форма обратной связи">
           <p class="close-btn"><a onClick="close()"  aria-describedby="descriptionClose" aria-label="Кнопка закрыть окно формы отправки">Закрыть</a>
@@ -140,7 +127,20 @@
         <!-- конец форма обратной связи -->
     </main>
     <!-- конец main -->
-    <!-- начало footer -->
+     <!--  начало  карта Нёрдс -->
+        <section class="nerds-location">
+            <div class="nerds-contact"  aria-labelledby="address-studio" aria-describedby="address-info">
+              <p class="nerds-title" id="address-studio">Nёrds design studio</p>
+              <p id="address-info" class="nerds-address">
+                  191186 Санкт-Петербург,<br/>
+                  ул. Б. Конюшенная, д.19/8<br/>
+                  +7 (812) 275-75-75
+               </p>
+              <a href="mailto:contacts@nerds.ru" aria-label="Наш email contacts@nerds.ru" class="btn btn-contacts">Напишите нам</a>
+            </div>
+            <p class="nerds-marker" aria-label="Наш адрес на карте">Наш адрес на карте</p>
+        </section>
+        <!--  конец карта Нёрдс -->
     <footer>
       <div class="container footer">
           <ul class="footer-social">

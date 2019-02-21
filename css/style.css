@@ -35,7 +35,7 @@ fieldset {
 .feedback-form-container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .container-inner {
@@ -49,17 +49,18 @@ fieldset {
   justify-content: space-between;
 }
 
-.main-navigaton .header-page-logo,
-.main-navigation .site-navigation {}
-
 .main-header,
 .inner-header {
   background: #eeeeee;
 }
 
+.inner-header {
+  min-height: 355px;
+}
+
 .header-page-logo {
   padding: 0;
-  margin: 50px 0 0 0;
+  margin: 50px 0 0 -15px;
   opacity: 1;
 }
 
@@ -72,11 +73,11 @@ fieldset {
 }
 
 .user-navigation {
-  padding: 0 0 0 10px;
+  padding: 0;
 }
 
 .site-navigation {
-  margin: 75px 0 0 7px;
+  margin: 80px 0 0 0;
   padding: 0 0 0 10px;
 }
 
@@ -90,7 +91,7 @@ fieldset {
 }
 
 .cart-link {
-  margin: 60px 0 0 0;
+  margin: 64px 0 0 0;
 }
 
 .cart-link a:link {
@@ -284,7 +285,7 @@ fieldset {
 .nerds-items {
   display: flex;
   flex-wrap: nowrap;
-  align-items: left;
+  text-align: left;
 }
 
 .nerds-title {
@@ -353,8 +354,8 @@ fieldset {
 .our-clients-item li {
   display: inline-block;
   margin-right: 70px;
+  padding:30px 0;
   vertical-align: middle;
-  line-height: 50px;
 }
 
 .our-clients-item a:link img {
@@ -519,6 +520,7 @@ fieldset {
 }
 
 .big-title {
+  padding: 27px 0 0 0;
   color: #000000;
   font-size: 55px;
   font-weight: normal;
@@ -709,6 +711,31 @@ fieldset {
   padding-top: 45px;
 }
 
+.nerds-location {
+  position: relative;
+  width: 1440px;
+  height: 416px;
+  margin: 70px auto;
+  background: url('../img/map.png') no-repeat;
+}
+
+.nerds-location .nerds-contact {
+  position: absolute;
+  top:20px;
+  left:20px;
+}
+
+.nerds-location .nerds-marker {
+  position: absolute;
+  top:50px; 
+  right:390px;
+  width: 231px;
+  height: 190px;
+  background: url('../img/map-marker.png') no-repeat; 
+  text-indent: -9999999px;
+}
+
+ 
 .visually-hidden {
   display: none;
 }
