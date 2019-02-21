@@ -106,13 +106,13 @@ fieldset {
   padding: 0 0 0 30px;
 }
 
-.cart-link a:active {
+.cart-link a:visited {
   padding: 0 0 10px 30px;
   color: #fb565a;
   border-bottom: 2px solid #fb5559;
 }
 
-.cart-link a:visited {
+.cart-link a:active {
   padding: 0 0 0 30px;
   color: #a6a6a7;
 }
@@ -134,7 +134,7 @@ fieldset {
   color: #fb565a;
 }
 
-.site-navigation a:visited {
+.site-navigation a:visted {
   color: #a6a6a7;
 }
 
@@ -655,7 +655,7 @@ fieldset {
 }
 
 .close-btn:active,
-.close-btn:viited {
+.close-btn:visited {
   opacity: 0.4;
 }
 
@@ -667,8 +667,9 @@ fieldset {
   color: #000000;
   font-size: 16px;
   border: 1px solid #d7dcde;
-  border-radius: 2px;
+  border-radius: 4px;
   resize: none;
+  outline: none;
 }
 
 .feedback-form input[type=text],
@@ -682,12 +683,27 @@ fieldset {
   min-height: 47px;
   line-height: 47px;
   box-sizing: border-box;
+  outline: none;
 }
 
 .feedback-form input[type=text]:hover,
 .feedback-form input[type=email]:hover {
-
+   opacity:0.6;
 }
+
+
+.feedback-form input[type=text]:focus,
+.feedback-form input[type=email]:focus {
+   border: 1px solid #000000;
+   color:#000000;
+}
+
+.feedback-form input[type=text]:valid,
+.feedback-form input[type=email]:valid {
+  border: 1px solid #01a25e;
+  color:#01a25e;
+}
+
 
 .feedback-form .send-button {
   padding-top: 45px;

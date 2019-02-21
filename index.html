@@ -125,13 +125,13 @@
             <ul>
               <li class="feedback-title">Напишите нам</li>
               <li class="inputs"><label for="fullname">Ваше имя:</label>
-        <input id="fullname" aria-label="Ваше имя"  tabindex="0" type="text"
+        <input required id="fullname" aria-label="Ваше имя"  tabindex="0" type="text"
                name="fullname" placeholder="Имя Фамилия"></li>
               <li class="inputs"><label for="user-email">Ваш e-mail:</label>
-        <input id="user-email" aria-label="Ваш e-mail" tabindex="1" type="email"
+        <input required id="user-email" aria-label="Ваш e-mail" tabindex="1" type="email"
                name="email" placeholder="email@example.com"></li>
               <li class="textarea"><label for="email-text">Текст письма:</label>
-        <textarea tabindex="-1" aria-label="Текст письма"  name="email-text" id="email-text" placeholder="В свободной форме"></textarea></li>
+        <textarea required tabindex="-1" aria-label="Текст письма"  name="email-text" id="email-text" placeholder="В свободной форме"></textarea></li>
              <li class="send-button"><button class="btn feedback-btn" aria-label="Отправить нам сообщение" name="submit" type="submit">Отправить</button></li>
             </ul>
        </fieldset>
