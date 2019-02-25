@@ -170,7 +170,8 @@ ul {
 .btn,
 .btn-info,
 .feedback-btn,
-.btn-order {
+.btn-order,
+.btn-contacts {
   display: inline-block;
   min-height: 48px;
   padding: 0 20px;
@@ -200,23 +201,27 @@ ul {
 
 .btn-red,
 .btn-info,
-.feedback-btn {
+.feedback-btn,
+.btn-contacts {
   background: #fb5559; 
   border-top: 2px solid #fb565a;
 }
 
-.btn-order {
+.btn-order,
+.btn-contacts {
   background: #e84044;
   border-top: 2px solid #e84044;
 }
 
-.btn-order:hover {
+.btn-order:hover,
+.btn-contacts:hover {
   background: #d83438;
   border-top: 2px solid #d83438;
   color:#ffffff;
 }
 
-.btn-order:active {
+.btn-order:active ,
+.btn-contacts:active{
   background: #d83438;
   color: #ffffff;  
   border-top: 2px solid #c22e32;
@@ -825,8 +830,27 @@ ul {
 
 .nerds-location .nerds-contact {
   position: absolute;
-  top:20px;
-  left:20px;
+  top:55px;
+  left:140px;
+  width: 319px;
+  height: 308px;
+  background: #ffffff;
+  text-align: center;
+}
+
+
+.nerds-location .nerds-title {
+  padding:20px 0;
+  color:  #000000;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nerds-location .nerds-address {
+  padding:0 0 20px 0;
+  color:  #666666;
+  font-size: 16px;
 }
 
 .nerds-location .nerds-marker {
