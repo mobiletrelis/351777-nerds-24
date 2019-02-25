@@ -168,13 +168,13 @@ ul {
 .feedback-btn,
 .btn-order {
   display: inline-block;
-  min-height: 50px;
+  min-height: 48px;
   padding: 0 20px;
   color: #ffffff;
   font-size: 16px;
   font-weight: normal;
   border-radius: 4px;
-  line-height: 50px;
+  line-height: 48px;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
@@ -198,7 +198,8 @@ ul {
 .btn-info,
 .feedback-btn,
 .btn-order {
-  background: #fb565a;
+  background: #fb5559;
+  border-top: 2px solid #fb565a;
 }
 
 .btn-info:hover,
@@ -206,46 +207,51 @@ ul {
 .feedback-btn:hover,
 .btn-order:hover {
   background: #e84044;
-  color: #e47174;
+  color: #ffffff;
+  border-top: 2px solid #fb565a;
 }
 
 .btn-info:active,
 .btn-red:active,
 .feedback-btn:active,
-.btn-order:hover  {
+.btn-order:active {
   background: #d83438;
-  color: #e47174;
-  box-shadow: 0px 0 2px 0 #c22e32;
+  color: #e47174;  
+  border-top: 2px solid #c22e32;
 }
 
 .btn-green {
-  background: #00ca74;
+  background: #00cb74;
+  border-top: 2px solid #00cb74;
 }
 
 .btn-green:hover {
   background: #00be6c;
-  color: #88e1ba;
+  color: #ffffff;
+  border-top: 2px solid #00cb74;
 }
 
 .btn-green:active {
   background: #00ab62;
   color: #43c18b;
-  box-shadow: 0px 0 2px 0 #009a57;
+  border-top: 2px solid #009a57;
 }
 
 .btn-yellow {
   background: #efc84a;
+  border-top: 2px solid #efc84a;
 }
 
 .btn-yellow:hover {
   background: #ebb731;
   color: #ffffff;
+  border-top: 2px solid #ebb731;
 }
 
 .btn-yellow:active {
   background: #e6a81d;
   color: #edc261;
-  box-shadow: 0px 0 2px 0 #cf9719;
+  border-top: 2px solid #cf9719;
 }
 
 .banner-content {
