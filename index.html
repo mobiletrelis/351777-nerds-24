@@ -74,7 +74,7 @@
             выше креатива. Работаем не покладая рук, как роботы">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br/>
             выше креатива. Работаем не покладая рук, как роботы.
             </p>
-            <p class="nerds-orders-title" aria-label="Выполняем закаы на разраотку: ">Выполняем закаы на разраотку: </p>
+            <p class="nerds-orders-title" aria-label="Выполняем закаы на разраотку: ">Выполняем закаы на разработку: </p>
             <ul class="nerds-orders-list">
               <li aria-label="Веб-сайты любой сложности">Веб-сайты любой сложности</li>
               <li aria-label="Мобильные приложения для IOS и Android">Мобильные приложения для IOS и Android</li>
@@ -103,31 +103,6 @@
         </ul>
         </section>
          <!--  конец наши клиенты -->
-        <!-- начало форма обратной связи -->
-      <section class="feedback-form-container visually-hidden">
-        <h4 class="visually-hidden">Напишите нам</h4>
-          <form class="feedback-form" method="post"
-          action="https://echo.nerds.ru" aria-label="форма обратной связи">
-          <p class="close-btn"><a onClick="close()"  aria-describedby="descriptionClose" aria-label="Кнопка закрыть окно формы отправки">Закрыть</a>
-           <span class="visually-hidden" id="descriptionClose">Вы закрывает форму отправки  обратной связи</span>
-          </p>
-          <fieldset>
-            <ul>
-              <li class="feedback-title">Напишите нам</li>
-              <li class="inputs"><label for="fullname">Ваше имя:</label>
-        <input required id="fullname" aria-label="Ваше имя"  tabindex="0" type="text"
-               name="fullname" placeholder="Имя Фамилия"></li>
-              <li class="inputs"><label for="user-email">Ваш e-mail:</label>
-        <input required id="user-email" aria-label="Ваш e-mail" tabindex="1" type="email"
-               name="email" placeholder="email@example.com"></li>
-              <li class="textarea"><label for="email-text">Текст письма:</label>
-        <textarea required tabindex="-1" aria-label="Текст письма"  name="email-text" id="email-text" placeholder="В свободной форме"></textarea></li>
-             <li class="send-button"><button class="btn feedback-btn" aria-label="Отправить нам сообщение" name="submit" type="submit">Отправить</button></li>
-            </ul>
-       </fieldset>
-    </form>
-  </section>
-        <!-- конец форма обратной связи -->
     </main>
     <!-- конец main -->
      <!--  начало  карта Нёрдс -->
@@ -140,9 +115,32 @@
                   ул. Б. Конюшенная, д.19/8<br/><br/>
                   +7 (812) 275-75-75
                </p>
-              <a href="mailto:contacts@nerds.ru" aria-label="Наш email contacts@nerds.ru" class="btn btn-contacts">Напишите нам</a>
+              <a href="#" aria-label="Наш email contacts@nerds.ru" class="btn btn-contacts">Напишите нам</a>
             </div>
             <p class="nerds-marker" aria-label="Наш адрес на карте">Наш адрес на карте</p>
+            <!-- начало форма обратной связи -->
+      <div class="modal-feedback">
+          <form class="feedback-form" method="post"
+          action="https://echo.nerds.ru" aria-label="форма обратной связи">
+          <p class="modal-feedback-close"><a onClick="close()"  aria-describedby="descriptionClose" aria-label="Кнопка закрыть окно формы отправки">Закрыть</a>
+          </p>
+          <fieldset>
+            <ul>
+              <li><h4 class="feedback-title">Напишите нам</h4></li>
+              <li class="inputs"><label for="fullname">Ваше имя:</label>
+        <input required id="fullname" aria-label="Ваше имя"  tabindex="0" type="text"
+               name="fullname" placeholder="Имя Фамилия"></li>
+              <li class="inputs"><label for="user-email">Ваш e-mail:</label>
+        <input required id="user-email" aria-label="Ваш e-mail" tabindex="1" type="email"
+               name="email" placeholder="email@example.com"></li>
+              <li class="textarea"><label for="email-text">Текст письма:</label>
+        <textarea required tabindex="-1" aria-label="Текст письма"  name="email-text" id="email-text" placeholder="В свободной форме"></textarea></li>
+             <li class="send-button"><button class="btn feedback-btn" aria-label="Отправить нам сообщение" name="submit" type="submit">Отправить</button></li>
+            </ul>
+       </fieldset>
+    </form>
+  </div>
+        <!-- конец форма обратной связи -->
         </section>
         <!--  конец карта Нёрдс -->
     <footer>
@@ -161,5 +159,7 @@
       </div>
     </footer>
     <!-- конец footer -->
+    <script src="js/modal-popup.js"></script>
+    <script src="js/validation-form.js"></script>
 </body>
 </html>

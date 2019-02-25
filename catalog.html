@@ -162,9 +162,10 @@
       </section>
     </main>
     <!-- конец список шаблонов -->
+    <!-- конец main -->
      <!--  начало  карта Нёрдс -->
-        <section class="nerds-location visually-hidden">
-          <h4 class="visually-hidden" aria-label="">Наш адрес</h4>
+        <section class="nerds-location">
+            <h4 class="visually-hidden">Наш адрес</h4>
             <div class="nerds-contact"  aria-labelledby="address-studio" aria-describedby="address-info">
               <p class="nerds-title" id="address-studio">Nёrds design studio</p>
               <p id="address-info" class="nerds-address">
@@ -172,44 +173,41 @@
                   ул. Б. Конюшенная, д.19/8<br/><br/>
                   +7 (812) 275-75-75
                </p>
-              <a href="mailto:contacts@nerds.ru" aria-label="Наш email contacts@nerds.ru" class="btn btn-contacts">Напишите нам</a>
+              <a href="#" aria-label="Наш email contacts@nerds.ru" class="btn btn-contacts">Напишите нам</a>
             </div>
             <p class="nerds-marker" aria-label="Наш адрес на карте">Наш адрес на карте</p>
-        </section>
-        <!--  конец карта Нёрдс -->
-        <!-- начало форма обратной связи -->
-        <section class="feedback-form-container">
-          <h4 class="visually-hidden">Напишите нам</h4>
+            <!-- начало форма обратной связи -->
+      <div class="modal-feedback">
           <form class="feedback-form" method="post"
-          action="https://echo.nerds.ru"  aria-label="форма обратной связи">
-          <p class="close-btn"><a onClick="close()"  aria-describedby="descriptionClose" aria-label="Кнопка закрыть окно формы отправки">Закрыть</a>
-           <span class="visually-hidden" id="descriptionClose">Вы закрывает форму отправки  обратной связи</span>
+          action="https://echo.nerds.ru" aria-label="форма обратной связи">
+          <p class="modal-feedback-close"><a onClick="close()"  aria-describedby="descriptionClose" aria-label="Кнопка закрыть окно формы отправки">Закрыть</a>
           </p>
           <fieldset>
             <ul>
-              <li class="feedback-title" aria-label="Напишите нам">Напишите нам:</li>
-              <li  class="inputs"><label for="fullname">Ваше имя:</label>
+              <li><h4 class="feedback-title">Напишите нам</h4></li>
+              <li class="inputs"><label for="fullname">Ваше имя:</label>
         <input required id="fullname" aria-label="Ваше имя"  tabindex="0" type="text"
-               name="fullname" maxlength="30" placeholder="Имя Фамилия"></li>
+               name="fullname" placeholder="Имя Фамилия"></li>
               <li class="inputs"><label for="user-email">Ваш e-mail:</label>
         <input required id="user-email" aria-label="Ваш e-mail" tabindex="1" type="email"
-               name="email" maxlength="50" autocomplete="off" placeholder="email@example.com"></li>
+               name="email" placeholder="email@example.com"></li>
               <li class="textarea"><label for="email-text">Текст письма:</label>
         <textarea required tabindex="-1" aria-label="Текст письма"  name="email-text" id="email-text" placeholder="В свободной форме"></textarea></li>
              <li class="send-button"><button class="btn feedback-btn" aria-label="Отправить нам сообщение" name="submit" type="submit">Отправить</button></li>
             </ul>
        </fieldset>
     </form>
-  </section>
-    <!-- конец форма обратной связи -->
-    <!-- начало footer -->
+  </div>
+        <!-- конец форма обратной связи -->
+        </section>
+        <!--  конец карта Нёрдс -->
     <footer>
       <div class="container footer">
         <h4 class="visually-hidden">Наши контакты</h4>
           <ul class="footer-social">
-            <li><a href="https://vk.com/nerds" aria-label="Вконтакте студии «Нёрдс»" class="social-button" target="_blank"><img src="img/vk-icon.png" alt="Вконтакте"/></a> </li>
-            <li><a href="https://facebook.com/nerds" aria-label="Фесбук студии «Нёрдс»" class="social-button" target="_blank"><img src="img/fb-icon.png" alt="Фейбсук"/></a> </li>
-            <li><a href="https://instagram.com/nerds" aria-label="Инстаграм студии «Нёрдс»"  class="social-button" target="_blank"><img src="img/insta-icon.png" alt="Инстаграм"/></a></li>
+            <li><a href="https://vk.com/nerds" aria-label="Вконтакте студии «Нёрдс»" class="social-button" target="_blank"><img src="img/vk-icon.png" width="26" height="15" alt="Вконтакте"/></a> </li>
+            <li><a href="https://facebook.com/nerds" aria-label="Фесбук студии «Нёрдс»" class="social-button" target="_blank"><img src="img/fb-icon.png" width="12" height="22" alt="Фейбсук"/></a> </li>
+            <li><a href="https://instagram.com/nerds" aria-label="Инстаграм студии «Нёрдс»"  class="social-button" target="_blank"><img src="img/insta-icon.png" width="21" height="21" alt="Инстаграм"/></a></li>
           </ul>
           <section class="footer-info" aria-describedby="discount-info">
             <h5 class="visually-hidden">Информация</h5>
@@ -219,5 +217,7 @@
       </div>
     </footer>
     <!-- конец footer -->
+    <script src="js/modal-popup.js"></script>
+    <script src="js/validation-form.js"></script>
 </body>
 </html>
