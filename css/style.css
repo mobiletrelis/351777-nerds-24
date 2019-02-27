@@ -64,8 +64,7 @@ ul {
   position: absolute;
   z-index: 999;
   width: 1200px;
-  background:#ffffff;
-  top:-50px;
+  top:-100px;
   left:90px;
   animation-name: bounce;
   animation-duration: 0.6s;
@@ -433,7 +432,6 @@ ul {
 
 .our-clients-item li {
   display: inline-block;
-  background: url('../img/line-grey.png') no-repeat 0px 40px;
   padding:30px 0 ;
   vertical-align: middle;
 
@@ -735,6 +733,7 @@ ul {
   width: 960px;
   height: 590px;
   margin: 0 auto;
+  background:#ffffff;
   box-shadow: 5px 10px 18px #000000;
 }
 
