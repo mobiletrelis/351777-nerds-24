@@ -1,4 +1,4 @@
-html,
+.filters .btn-filtershtml,
 body {
   margin: 0;
   padding: 0;
@@ -109,7 +109,7 @@ ul {
 }
 
 .site-navigation {
-  margin: 80px 0 0 0;
+  margin: 70px 0 0 0;
   padding: 0 0 0 10px;
 }
 
@@ -123,7 +123,7 @@ ul {
 }
 
 .cart-link {
-  margin: 64px 0 0 0;
+  margin: 55px 25px 0 0;
 }
 
 .cart-link a:link {
@@ -186,7 +186,7 @@ ul {
   color: #000000;
   font-size: 55px;
   font-weight: normal;
-  line-height: 55px;
+  line-height: 45px;
   text-align: left;
 }
 
@@ -320,6 +320,7 @@ ul {
 
 .details {
   margin: 0;
+  line-height: 30px;
 }
 
 .service-list {
@@ -655,14 +656,16 @@ ul {
 }
 
 .filters legend {
+  padding:20px 0 0 0;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .filters .btn-filters {
-  min-width: 220px;
+  min-width: 250px;
   min-height: 48px;
   display: inline-block;
+  margin:20px 0 0;
   padding: 0 20px;
   background: #efefef;
   border-top: 2px solid #efefef;
