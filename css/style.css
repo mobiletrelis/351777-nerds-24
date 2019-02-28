@@ -747,7 +747,7 @@ ul {
 
 .feedback-form {
   position: relative;
-  width: 960px;
+  width: 940px;
   height: 590px;
   margin: 0 auto;
   background:#ffffff;
@@ -763,8 +763,9 @@ ul {
 }
 
 .feedback-form fieldset {
-  width: 780px;
+  width: 90%;
   margin: 0 auto;
+  padding: 0;
 }
 
 .feedback-form label {
@@ -778,10 +779,11 @@ ul {
 .feedback-form .inputs {
   display: inline-block;
   margin: 0 0 20px 0;
+  padding: 0
 }
 
 .feedback-form .inputs:nth-child(2) {
-  margin-right: 35px;
+  margin-right: 30px;
 }
 
 .modal-feedback-close {
