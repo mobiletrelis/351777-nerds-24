@@ -16,29 +16,10 @@ img {
   box-sizing: border-box;
 }
 
-li {
-  list-style-type: none;
-}
-
 a:link {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
-  font-family: Roboto, Verdana, sans-serif;
-}
-
-fieldset {
-  border: none;
-}
-
-ul {
-  padding-inline-start: 0;
-}
 
 .container {
   position: relative;
@@ -51,33 +32,51 @@ ul {
   display: none;
 }
 
-
 @keyframes bounce {
    0% { transform: translateY(-2000px);}
    70% { transform: translateY(30px); }
    90% { transform: translateY(-10px); }
    100% { transform: translateY(0); }
- }
+}
+
+
+.modal-error {
+animation-name: bonus;
+animation-duration: 1s;
+}
 
 .modal-feedback-show {
   display: block;
   position: absolute;
   z-index: 999;
   width: 1200px;
-  top:-100px;
-  left:90px;
+  top: -100px;
+  left: 90px;
   animation-name: bounce;
   animation-duration: 0.6s;
 }
 
 .container-inner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: wrap;
   flex-direction: wrap;
 }
 
 .main-navigaton,
 .inner-navigaton {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -124,6 +123,8 @@ ul {
 
 .cart-link {
   margin: 64px 0 0 0;
+  list-style-type: none;
+
 }
 
 .cart-link a:link {
@@ -183,11 +184,13 @@ ul {
 
 .slogan {
   display: inline-block;
+  width: 450px;
+  overflow: hidden;
   color: #000000;
-  font-size: 55px;
+  font-size: 45px;
   font-weight: normal;
-  line-height: 55px;
-  text-align: left;
+  text-overflow: ellipsis;
+  vertical-align: middle;
 }
 
 .btn,
@@ -202,17 +205,18 @@ ul {
   font-size: 16px;
   font-weight: normal;
   line-height: 48px;
+  vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-
+  border-radius: 4px;
 }
 
 .btn-info {
-  min-width: 240px;
+  min-width: 250px;
+  margin: 25px 0 0 0;
 }
 
 .btn,
@@ -243,7 +247,7 @@ ul {
 .btn-contacts:hover {
   background: #d83438;
   border-top: 2px solid #d83438;
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .btn-order:active ,
@@ -304,8 +308,15 @@ ul {
 }
 
 .banner-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+
 }
 
 .banner-content .banner-text {
@@ -320,17 +331,49 @@ ul {
 
 .details {
   margin: 0;
+  line-height: 25px;
 }
 
 .service-list {
   display: flex;
-  justify-content: space-between;
-  margin:80px 0 0;
-  padding:0;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 0;
+}
+
+.service-item  {
+  margin: 80px 85px 0 0;
+  list-style: none;
   text-align: left;
 }
 
+.service-item li:first-child {
+  margin-left: 0;
+  padding: 0;
+}
+
+.service-image {
+  min-width: 300px;
+  min-height: 146px;
+}
+
+.service-image-red {
+  background: #fb5559;
+}
+
+.service-image-green {
+  background: #00cb74;
+}
+
+.service-image-yellow {
+  background: #f0ca47;
+}
+
 .service-title {
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -339,11 +382,15 @@ ul {
 }
 
 .service-desc {
+  width: 300px;
+  overflow: hidden;
   color: #283136;
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
   text-align: left;
+  text-overflow: ellipsis;
+  white-space: pre-line;
 }
 
 .service-item .order {
@@ -351,19 +398,26 @@ ul {
 }
 
 .nerds {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  margin: 80px 0 0 0;
-  padding: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin:60px 0 0 0;
+  padding: 20px 0 0 0;
+  vertical-align: middle;
   border-top: 1px solid #eeeeee;
-  text-align: left;
 }
 
-
 .nerds-title {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
   color: #000000;
   font-size: 45px;
   font-weight: normal;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
 }
 
 .nerds-slogan {
@@ -375,21 +429,30 @@ ul {
 .nerds-orders-title,
 .nerds-orders-list {
   margin: 0;
+  padding: 0;
   text-align: left;
   color: #000000;
   line-height: 24px;
 }
 
 .nerds-orders-title {
-  margin:35px 0 0 0;
+  overflow: hidden;
+  margin: 35px 0 0 0;
   font-weight: bold;
+  text-overflow: ellipsis;
   text-transform: uppercase;
 }
 
 .nerds-orders-list li {
-  margin:20px 0 0 0;
-  padding:0 0 0 40px;
+  margin: 20px 0 0 0;
+  padding: 0 0 0 40px;
   background: url('../img/line.png') no-repeat 5px 10px;
+  list-style-type: none;
+}
+
+.nerds-items{
+  margin: 0;
+  padding: 40px 90px 0 0;
 }
 
 .nerds-statistics {
@@ -405,6 +468,8 @@ ul {
 }
 
 .statistics-data {
+  margin: 0;
+  padding: 0;
   color: #283136;
   font-weight: normal;
   line-height: 18px;
@@ -419,63 +484,72 @@ ul {
 .data-2,
 .data-3 {
   display: inline-block;
-  margin: 30px 0;
+  margin: 20px 0;
+  vertical-align: middle;
   color: #000000;
   font-size: 45px;
   font-weight: bolder;
-  line-height: 24px;
 }
 
 .our-clients {
-  margin:70px 0 0 0;
+  margin: 70px 0 0 0;
   text-align: center;
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
 }
 
+.our-clients-item  {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
 .our-clients-item li {
   display: inline-block;
-  padding:30px 0 ;
+  margin: 0;
+  padding: 40px 0;
+  margin: 0 80px 0 0;
   vertical-align: middle;
 
 }
 
-.our-clients-item li a {
-  min-height: 70px;
-  margin-right: 70px;
-}
-
 .our-clients-item li:first-child {
-  background: none;
+  margin-left: 40px;
+
 }
 
-.our-clients-item a:link img {
+.our-clients-item a:link  {
   opacity: 0.5;
 }
 
-.our-clients-item a:hover img {
+.our-clients-item a:hover  {
   opacity: 1;
 }
 
-.our-clients-item a:active img {
+.our-clients-item a:active {
   opacity: 0.3;
 }
 
 .templates-list {
   margin: 0;
   padding: 0;
-  text-align:center;
+  clear: both;
+  text-align: left;
+}
+
+.templates-shop {
+  margin: 0;
+  padding: 0 0 0 70px;
 }
 
 .template-item {
-  position: relative;
   display: inline-block;
-  margin: 10px;
-  padding: 0;
+  margin: 0 70px 10px 0;
   background: #e9e9e9;
-  border-radius: 4px 4px 0 0;
+  vertical-align: middle;
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 
 .template-item:hover {
@@ -504,7 +578,7 @@ ul {
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
-  color:#000000;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -523,62 +597,104 @@ ul {
 }
 
 .templates-list .template-image {
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
-/* скрыто
 .pagination-list {
-  padding: 10px 0;
-}
-
-
-.pagination-item   {
+  margin: 60px 0;
+  padding: 0;
   display: inline-block;
-  min-width: 50px;
-  line-height: 50px;
-  text-align: center;
+}
+
+.pagination-list  a {
+  float: left;
+  min-height: 40px;
+  margin: 0 10px 0 0;
+  padding: 0 16px;
+  background: #eeeeee;
+  color:#000000;
+  font-size: 16px;
+  line-height: 40px;
+  text-decoration: none;
+  border: 3px solid #eee;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   border-radius: 4px;
-  color: #000000;
-  background: #efefef;
-
 }
 
-.pagination-item li:hover {
-  background: #e0e0e0;
-
-}
-
-.pagination-item li:active {
-  background: #d6d6d6;
-  color:#c1c1c1;
-}
-
-
-.pagination-item-current {
-  min-width: 50px;
-  color: #000000;
-  border: 4px solid #eeeeee;
+.pagination-list  a.active {
   background: #ffffff;
+  color: #000000;
+  border: 3px solid #eeeeee;
 }
 
-.pagination-item-next {
+.pagination-list  a:hover:not(.active) {
+  background: #dfdfdf;
+  border: none;
+}
+
+.pagination-list .pagination-item-next {
+  min-height: 40px;
   min-width: 260px;
+  text-align: center;
 }
 
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
+.sorting-block {
+  position: relative;
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0 0 40px 0;
+}
+
+.sorting-title {
+  float:left;
   color: #000000;
-  background: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
 }
 
-*/
 
-/* Стили блока footer */
+.sorting-items  {
+  float:right;
+  text-align: right;
+  margin:0;
+  padding: 0;
+
+}
+
+.sorting-items a {
+  margin:0 10px 0 0;
+  color: #000000;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  opacity: 0.4;
+}
+
+.sorting-items a:hover {
+   opacity: 0.6;
+}
+
+.sorting-items a.active,
+.sorting-items a:active {
+   opacity: 1;
+}
+
+.footer-block {
+  margin:80px 0 0 0;
+}
 
 .footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
   justify-content: left;
 }
 
@@ -594,6 +710,7 @@ ul {
   display: inline-block;
   margin: 0 11px 0 0;
   padding: 0;
+  vertical-align: middle;
 }
 
 .footer-social a {
@@ -602,9 +719,10 @@ ul {
   height: 79px;
   line-height: 90px;
   text-align: center;
-  border-radius: 50%;
+  vertical-align: middle;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 
 
@@ -619,9 +737,11 @@ ul {
 .footer-social a:active {
   background: #d7373b;
   box-shadow: 0px 0 2px 0 #c22e32;
-  opacity:0.2;
 }
 
+.footer-social img:active {
+  opacity:0.6;
+}
 
 .footer-info {
   text-align: left;
@@ -655,14 +775,22 @@ ul {
 }
 
 .filters legend {
+  padding: 25px 0;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.filters fieldset {
+  margin:0;
+  padding:0;
+  border: none;
 }
 
 .filters .btn-filters {
   min-width: 220px;
   min-height: 48px;
   display: inline-block;
+  margin: 20px 0;
   padding: 0 20px;
   background: #efefef;
   border-top: 2px solid #efefef;
@@ -670,77 +798,171 @@ ul {
   font-size: 16px;
   font-weight: bold;
   border: none;
+  vertical-align: middle;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   outline: none;
-  border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 
 .filters .btn-filters:hover {
   background: #e0e0e0;
-  border-top: 2px solid #e0e0e0;
+  opacity: 0.7;
 }
 
 .filters .btn-filters:active {
   background: #d6d6d6;
-  color: #959595;
-  border-top: 2px solid #c1c1c1;
-}
-
-.filters label {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  padding: 0 0 0 35px;
-  margin: 0;
-}
-
-.filters label:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -5px;
-  min-width: 27px;
-  min-height: 27px;
-}
-
-.filters input[type=checkbox],
-.filters input[type=radio] {
-  display: none;
-}
-
-.filters .checkbox label:before {
-  background: url('../img/checkbox-off.png') left center no-repeat;
-}
-
-.filters .radio label:before {
-  background: url('../img/radio-off.png') left center no-repeat;
-}
-
-.filters input[type=radio]:checked+label:before {
-  background: url('../img/radio-on.png') left center no-repeat;
-}
-
-.filters input[type=checkbox]:checked+label:before {
-  background: url('../img/checkbox-on.png') left center no-repeat;
-}
-
-/* hover */
-.filters .radio:hover label:before {
-  background: url('../img/radio-off-hover.png') left center no-repeat;
-}
-
-.filters .checkbox:hover label:before {
-  background: url('../img/checkbox-off-hover.png') left center no-repeat;
+  opacity: 0.4;
 }
 
 .btn-filters {
   min-width: 200px;
   min-height: 50px;
 }
+
+.radio,
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  line-height: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  color:#000000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio input[type=radio],
+.checkbox input[type=checkbox] {
+  position: absolute;
+  visibility: hidden;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.radio .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 25px;
+  min-width: 25px;
+  background: #ffffff;
+  border:4px solid  #b8b8b8;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 50%;
+}
+
+.radio:hover input ~ .checkmark,
+.radio input:checked ~ .checkmark:hover {
+  background: #ffffff;
+  border:4px solid  #4d4d4d;
+}
+
+.radio input:checked ~ .checkmark {
+  background: #ffffff;
+  border:4px solid #b8b8b8;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 9px;
+  height: 9px;
+  background:#b8b8b8;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 50%;
+}
+
+.radio:hover .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 9px;
+  height: 9px;
+  background:#4d4d4d;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 50%;
+}
+
+
+.checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background: #ffffff;
+  border:2px solid #a6a6a6;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.checkbox:hover input ~ .checkmark,
+.checkbox:hover input ~ .checkmark:hover {
+  border:2px solid #4d4d4d;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background: #ffffff;
+  border:2px solid #a6a6a6;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  top: -4px;
+  left: 7px;
+  width: 8px;
+  height: 14px;
+  border: 3px solid #a6a6a6;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkbox:hover .checkmark:after {
+  top: -4px;
+  left: 7px;
+  width: 8px;
+  height: 14px;
+  border: 3px solid #4d4d4d;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
 
 .feedback-form {
   position: relative;
@@ -759,9 +981,14 @@ ul {
   font-weight: normal;
 }
 
+.feedback-form ul {
+  list-style: none;
+}
+
 .feedback-form fieldset {
   width: 780px;
   margin: 0 auto;
+  border: none;
 }
 
 .feedback-form label {
@@ -811,9 +1038,9 @@ ul {
   border: 1px solid #d7dcde;
   resize: none;
   outline: none;
-  border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 
 .feedback-form input[type=text],
@@ -827,27 +1054,27 @@ ul {
   line-height: 47px;
   box-sizing: border-box;
   outline: none;
-  border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 
 
 .feedback-form input[type=text]
 .feedback-form input[type=email] {
-   opacity:0.4;
+   opacity: 0.4;
 }
 
 .feedback-form input[type=text]:hover,
 .feedback-form input[type=email]:hover {
-   opacity:0.6;
+   opacity: 0.6;
 }
 
 
 .feedback-form input[type=text]:focus,
 .feedback-form input[type=email]:focus {
    border: 1px solid #000000;
-   color:#000000;
+   color: #000000;
 }
 
 .feedback-form input[type=text]:valid,
@@ -863,17 +1090,15 @@ ul {
 
 .nerds-location {
   position: relative;
-  z-index: 1;
-  width: 1440px;
-  height: 416px;
-  margin: 70px auto;
-  background: url('../img/map.png') no-repeat;
+  margin: 0 0 40px 0;
+  min-height: 415px;
+  background: #eeeeee;
 }
 
 .nerds-location .nerds-contact {
   position: absolute;
-  top:55px;
-  left:140px;
+  top: 55px;
+  left: 140px;
   width: 319px;
   height: 308px;
   background: #ffffff;
@@ -882,23 +1107,24 @@ ul {
 
 
 .nerds-location .nerds-title {
-  padding:20px 0;
-  color:  #000000;
+  margin: 0;
+  padding: 20px 0;
+  color: #000000;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .nerds-location .nerds-address {
-  padding:0 0 20px 0;
-  color:  #666666;
+  padding: 0 0 20px 0;
+  color: #666666;
   font-size: 16px;
 }
 
 .nerds-location .nerds-marker {
   position: absolute;
-  top:50px;
-  right:390px;
+  top: 50px;
+  right: 390px;
   width: 231px;
   height: 190px;
   background: url('../img/map-marker.png') no-repeat;
