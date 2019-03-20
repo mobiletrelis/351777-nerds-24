@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link  href="css/normalize.css" rel="stylesheet">
     <link  href="css/style.css" rel="stylesheet">
+    <link  href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <!-- начало header -->
@@ -37,7 +38,7 @@
             <!-- начало фильтр "особенности" -->
             <legend>Сетка:</legend>
             <label class="radio" for="adaptive">Адаптивная
-              <input type="radio" aria-label="Сетка адаптивная" id="adaptive" name="grid" value="adaptive" tabindex="1" checked="checkbox">
+              <input type="radio" aria-label="Сетка адаптивная" id="adaptive" name="grid" value="adaptive" tabindex="1" checked>
             <span class="checkmark"></span>
             </label>
             <label class="radio" for="static">Фиксированная
@@ -82,16 +83,18 @@
       <section class="templates-shop">
         <h2 class="visually-hidden">Каталог дизайнов</h2>
         <section class="sorting-block">
+          <h3 class="visually-hidden">Сортировка</h3>
           <ul class="sorting-block">
             <li class="sorting-title">Сортировать:</li>
             <li class="sorting-items">
             <a href="#" class="active" aria-label="сортировать по цене">по цене</a>
             <a href="#" aria-label="сортировать по типу">по типу</a>
             <a href="#" aria-label="сортировать по названию">по названию</a>
-            <a href="#" class="sort-down"><img src="img/icon-down-dir.png" width="11" height="10" /></a>
-            <a href="#" class="sort-up"><img src="img/icon-up-dir.png" width="11" height="10" /></a>
+            <a href="#" class="sort-down"><img src="img/icon-down-dir.png" width="11" height="10" alt="" /></a>
+            <a href="#" class="sort-up"><img src="img/icon-up-dir.png" width="11" height="10" alt="" /></a>
           </li>
         </ul>
+      </section>
         <ul class="templates-list">
           <li class="template-item">
             <div class="decor-container">
@@ -170,7 +173,7 @@
           <a class="active" href="#">1</a>
           <a href="#">2</a>
           <a href="#">3</a>
-          <a class="pagination-item-next" href="#">Следущая</a></li>
+          <a class="pagination-item-next" href="#">Следущая</a>
         </p>
       </section>
     </main>

@@ -20,7 +20,6 @@ a:link {
   text-decoration: none;
 }
 
-
 .container {
   position: relative;
   width: 1200px;
@@ -33,16 +32,23 @@ a:link {
 }
 
 @keyframes bounce {
-   0% { transform: translateY(-2000px);}
-   70% { transform: translateY(30px); }
-   90% { transform: translateY(-10px); }
-   100% { transform: translateY(0); }
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-
 .modal-error {
-animation-name: bonus;
-animation-duration: 1s;
+  animation-name: bonus;
+  animation-duration: 1s;
 }
 
 .modal-feedback-show {
@@ -124,7 +130,6 @@ animation-duration: 1s;
 .cart-link {
   margin: 64px 0 0 0;
   list-style-type: none;
-
 }
 
 .cart-link a:link {
@@ -176,6 +181,7 @@ animation-duration: 1s;
   color: #000000;
   opacity: 0.6;
 }
+
 .site-navigation a.active {
   padding: 0 0 10px 0;
   color: #fb565a;
@@ -250,8 +256,8 @@ animation-duration: 1s;
   color: #ffffff;
 }
 
-.btn-order:active ,
-.btn-contacts:active{
+.btn-order:active,
+.btn-contacts:active {
   background: #d83438;
   color: #ffffff;
   border-top: 2px solid #c22e32;
@@ -316,7 +322,6 @@ animation-duration: 1s;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-
 }
 
 .banner-content .banner-text {
@@ -341,7 +346,7 @@ animation-duration: 1s;
   padding: 0;
 }
 
-.service-item  {
+.service-item {
   margin: 80px 85px 0 0;
   list-style: none;
   text-align: left;
@@ -403,7 +408,7 @@ animation-duration: 1s;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin:60px 0 0 0;
+  margin: 60px 0 0 0;
   padding: 20px 0 0 0;
   vertical-align: middle;
   border-top: 1px solid #eeeeee;
@@ -450,7 +455,7 @@ animation-duration: 1s;
   list-style-type: none;
 }
 
-.nerds-items{
+.nerds-items {
   margin: 0;
   padding: 40px 90px 0 0;
 }
@@ -498,7 +503,7 @@ animation-duration: 1s;
   border-bottom: 1px solid #cccccc;
 }
 
-.our-clients-item  {
+.our-clients-item {
   margin: 0;
   padding: 0;
   text-align: left;
@@ -510,19 +515,17 @@ animation-duration: 1s;
   padding: 40px 0;
   margin: 0 80px 0 0;
   vertical-align: middle;
-
 }
 
 .our-clients-item li:first-child {
   margin-left: 40px;
-
 }
 
-.our-clients-item a:link  {
+.our-clients-item a:link {
   opacity: 0.5;
 }
 
-.our-clients-item a:hover  {
+.our-clients-item a:hover {
   opacity: 1;
 }
 
@@ -559,7 +562,7 @@ animation-duration: 1s;
 .template-item:hover .template-info {
   display: inline-block;
   position: absolute;
-  left:0;
+  left: 0;
   bottom: 0;
   min-width: 360px;
   min-height: 231px;
@@ -570,7 +573,6 @@ animation-duration: 1s;
 
 .template-item .template-info {
   display: none;
-
 }
 
 .template-info .template-title {
@@ -607,13 +609,13 @@ animation-duration: 1s;
   display: inline-block;
 }
 
-.pagination-list  a {
+.pagination-list a {
   float: left;
   min-height: 40px;
   margin: 0 10px 0 0;
   padding: 0 16px;
   background: #eeeeee;
-  color:#000000;
+  color: #000000;
   font-size: 16px;
   line-height: 40px;
   text-decoration: none;
@@ -623,13 +625,13 @@ animation-duration: 1s;
   border-radius: 4px;
 }
 
-.pagination-list  a.active {
+.pagination-list a.active {
   background: #ffffff;
   color: #000000;
   border: 3px solid #eeeeee;
 }
 
-.pagination-list  a:hover:not(.active) {
+.pagination-list a:hover:not(.active) {
   background: #dfdfdf;
   border: none;
 }
@@ -648,7 +650,7 @@ animation-duration: 1s;
 }
 
 .sorting-title {
-  float:left;
+  float: left;
   color: #000000;
   font-size: 18px;
   text-transform: uppercase;
@@ -656,17 +658,15 @@ animation-duration: 1s;
   text-align: left;
 }
 
-
-.sorting-items  {
-  float:right;
+.sorting-items {
+  float: right;
   text-align: right;
-  margin:0;
+  margin: 0;
   padding: 0;
-
 }
 
 .sorting-items a {
-  margin:0 10px 0 0;
+  margin: 0 10px 0 0;
   color: #000000;
   font-size: 14px;
   font-weight: normal;
@@ -675,16 +675,16 @@ animation-duration: 1s;
 }
 
 .sorting-items a:hover {
-   opacity: 0.6;
+  opacity: 0.6;
 }
 
 .sorting-items a.active,
 .sorting-items a:active {
-   opacity: 1;
+  opacity: 1;
 }
 
 .footer-block {
-  margin:80px 0 0 0;
+  margin: 80px 0 0 0;
 }
 
 .footer {
@@ -725,7 +725,6 @@ animation-duration: 1s;
   border-radius: 50%;
 }
 
-
 .footer-social a:link {
   background: #e2e2e2;
 }
@@ -740,7 +739,7 @@ animation-duration: 1s;
 }
 
 .footer-social img:active {
-  opacity:0.6;
+  opacity: 0.6;
 }
 
 .footer-info {
@@ -781,8 +780,8 @@ animation-duration: 1s;
 }
 
 .filters fieldset {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -832,7 +831,7 @@ animation-duration: 1s;
   line-height: 25px;
   cursor: pointer;
   font-size: 16px;
-  color:#000000;
+  color: #000000;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -855,21 +854,21 @@ animation-duration: 1s;
   min-height: 25px;
   min-width: 25px;
   background: #ffffff;
-  border:4px solid  #b8b8b8;
+  border: 4px solid #b8b8b8;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 50%;
 }
 
-.radio:hover input ~ .checkmark,
-.radio input:checked ~ .checkmark:hover {
+.radio:hover input~.checkmark,
+.radio input:checked~.checkmark:hover {
   background: #ffffff;
-  border:4px solid  #4d4d4d;
+  border: 4px solid #4d4d4d;
 }
 
-.radio input:checked ~ .checkmark {
+.radio input:checked~.checkmark {
   background: #ffffff;
-  border:4px solid #b8b8b8;
+  border: 4px solid #b8b8b8;
 }
 
 .checkmark:after {
@@ -878,7 +877,7 @@ animation-duration: 1s;
   display: none;
 }
 
-.radio input:checked ~ .checkmark:after {
+.radio input:checked~.checkmark:after {
   display: block;
 }
 
@@ -887,7 +886,7 @@ animation-duration: 1s;
   left: 4px;
   width: 9px;
   height: 9px;
-  background:#b8b8b8;
+  background: #b8b8b8;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 50%;
@@ -898,12 +897,11 @@ animation-duration: 1s;
   left: 4px;
   width: 9px;
   height: 9px;
-  background:#4d4d4d;
+  background: #4d4d4d;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 50%;
 }
-
 
 .checkbox .checkmark {
   position: absolute;
@@ -912,29 +910,29 @@ animation-duration: 1s;
   height: 25px;
   width: 25px;
   background: #ffffff;
-  border:2px solid #a6a6a6;
+  border: 2px solid #a6a6a6;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
 
-.checkbox:hover input ~ .checkmark,
-.checkbox:hover input ~ .checkmark:hover {
-  border:2px solid #4d4d4d;
+.checkbox:hover input~.checkmark,
+.checkbox:hover input~.checkmark:hover {
+  border: 2px solid #4d4d4d;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
 
-.checkbox input:checked ~ .checkmark {
+.checkbox input:checked~.checkmark {
   background: #ffffff;
-  border:2px solid #a6a6a6;
+  border: 2px solid #a6a6a6;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
 
-.checkbox input:checked ~ .checkmark:after {
+.checkbox input:checked~.checkmark:after {
   display: block;
 }
 
@@ -962,14 +960,12 @@ animation-duration: 1s;
   transform: rotate(45deg);
 }
 
-
-
 .feedback-form {
   position: relative;
   width: 960px;
   height: 590px;
   margin: 0 auto;
-  background:#ffffff;
+  background: #ffffff;
   box-shadow: 5px 10px 18px #000000;
 }
 
@@ -1059,30 +1055,26 @@ animation-duration: 1s;
   border-radius: 4px;
 }
 
-
-.feedback-form input[type=text]
-.feedback-form input[type=email] {
-   opacity: 0.4;
+.feedback-form input[type=text] .feedback-form input[type=email] {
+  opacity: 0.4;
 }
 
 .feedback-form input[type=text]:hover,
 .feedback-form input[type=email]:hover {
-   opacity: 0.6;
+  opacity: 0.6;
 }
-
 
 .feedback-form input[type=text]:focus,
 .feedback-form input[type=email]:focus {
-   border: 1px solid #000000;
-   color: #000000;
+  border: 1px solid #000000;
+  color: #000000;
 }
 
 .feedback-form input[type=text]:valid,
 .feedback-form input[type=email]:valid {
   border: 1px solid #01a25e;
-  color:#01a25e;
+  color: #01a25e;
 }
-
 
 .feedback-form .send-button {
   padding-top: 45px;
@@ -1104,7 +1096,6 @@ animation-duration: 1s;
   background: #ffffff;
   text-align: center;
 }
-
 
 .nerds-location .nerds-title {
   margin: 0;
@@ -1131,7 +1122,6 @@ animation-duration: 1s;
   text-indent: -9999999px;
 }
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1144,5 +1134,3 @@ animation-duration: 1s;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
