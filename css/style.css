@@ -7,7 +7,6 @@ body {
   background: #ffffff;
 }
 
-
 img {
   max-width: 100%;
   height: auto;
@@ -93,6 +92,7 @@ a:link {
 }
 
 .inner-header {
+  margin: 0 0 30px 0;
   min-height: 355px;
 }
 
@@ -566,7 +566,7 @@ a:link {
 
 .template-item {
   display: inline-block;
-  margin: 0 50px 10px 0;
+  margin: 0 50px 20px 0;
   background: #e9e9e9;
   vertical-align: middle;
   -webkit-border-radius: 4px 4px 0 0;
@@ -636,6 +636,7 @@ a:link {
   background: #eeeeee;
   color: #000000;
   font-size: 16px;
+  font-weight: 500;
   line-height: 40px;
   text-decoration: none;
   border: 3px solid #eee;
@@ -664,7 +665,7 @@ a:link {
 .sorting-block {
   display: flex;
   list-style: none;
-  padding: 0 0 25px 0;
+  padding: 0 0 15px 0;
 }
 
 .sorting-title {
