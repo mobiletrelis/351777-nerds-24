@@ -1127,14 +1127,13 @@ a:link {
 .nerds-location .nerds-address {
   width: 220px;
   margin: 0 auto;
-  padding: 0 0 20px 0;
+  padding: 0 0 10px 0;
   color: #666666;
   font-size: 16px;
 }
 
 .nerds-location .tel {
   display:inline-block;
-  padding: 20px 0 0 0;
   color: #666666;
   font-size: 16px;
 }
