@@ -6,25 +6,24 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link  href="css/normalize.css" rel="stylesheet">
     <link  href="css/style.css" rel="stylesheet">
-    <link  href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <!-- начало header -->
     <header class="inner-header">
       <div class="container">
         <nav class="inner-navigaton">
-          <a class="header-page-logo" aria-label="Логотип Студия дизайна «Нёрдс»" href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Студия дизайна «Нёрдс»"></a>
+          <a class="header-page-logo" href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Студия дизайна «Нёрдс»"></a>
           <ul class="site-navigation">
             <li><a href="index.html" aria-label="Информация о студии дизайна «Нёрдс»">Студия</a></li>
             <li><a href="clients.html" aria-label="Клиенты студии дизайна «Нёрдс»">Клиенты</a></li>
             <li><a class="active" href="catalog.html" aria-label="Каталог товаров студии дизайна «Нёрдс»">Магазин</a></li>
             <li><a href="contacts.html" aria-label="Контакты студии дизайна «Нёрдс»">Контакты</a></li>
           </ul>
-          <ul class="user-navigation">
+          <ul>
             <li class="cart-link"><a href="cart.html" aria-label="Корзина заказов" class="cart">Корзина</a></li>
           </ul>
         </nav>
-        <h1 class="big-title" aria-label="Магазин готовых шаблонов">Магазин готовых шаблонов</h1>
+        <h1 class="big-title">Магазин готовых шаблонов</h1>
       </div>
     </header>
     <!-- конец header -->
@@ -38,15 +37,15 @@
             <!-- начало фильтр "особенности" -->
             <legend>Сетка:</legend>
             <label class="radio" for="adaptive">Адаптивная
-              <input type="radio" aria-label="Сетка адаптивная" id="adaptive" name="grid" value="adaptive" tabindex="1" checked>
+              <input type="radio" aria-label="Сетка адаптивная" id="adaptive" name="grid" value="adaptive" checked>
             <span class="checkmark"></span>
             </label>
             <label class="radio" for="static">Фиксированная
-              <input type="radio" aria-label="Сетка фиксированная" id="static" name="grid" value="static" tabindex="1">
+              <input type="radio" aria-label="Сетка фиксированная" id="static" name="grid" value="static">
               <span class="checkmark"></span>
             </label>
             <label class="radio" for="responsive">Резиновая
-            <input type="radio" aria-label="Сетка резиновая" id="responsive" name="grid" value="responsive" tabindex="2">
+            <input type="radio" aria-label="Сетка резиновая" id="responsive" name="grid" value="responsive">
             <span class="checkmark"></span>
             </label>
           </fieldset>
@@ -59,23 +58,23 @@
               <span class="checkmark"></span>
               </label>
             <label for="feature-block" class="checkbox">Блок преимуществ
-              <input type="checkbox" aria-label="Особенность блок преимуществ"  id="feature-block" name="feature2" value="feature-block" tabindex="4">
+              <input type="checkbox" aria-label="Особенность блок преимуществ"  id="feature-block" name="feature2" value="feature-block">
               <span class="checkmark"></span>
             </label>
             <label for="news" class="checkbox">Новости
-              <input type="checkbox" aria-label="Особенность новости"  id="news" name="feature3" value="news" checked tabindex="5">
+              <input type="checkbox" aria-label="Особенность новости"  id="news" name="feature3" value="news" checked>
               <span class="checkmark"></span>
             </label>
             <label for="gallery" class="checkbox">Галерея
-              <input type="checkbox" aria-label="Особенность галерея"  id="gallery" name="feature4" value="gallery" tabindex="6">
+              <input type="checkbox" aria-label="Особенность галерея"  id="gallery" name="feature4" value="gallery">
               <span class="checkmark"></span>
             </label>
             <label for="cart" class="checkbox">Корзина
-              <input type="checkbox" aria-label="Особенность - корзина" id="cart" name="feature5" value="cart" tabindex="7">
+              <input type="checkbox" aria-label="Особенность - корзина" id="cart" name="feature5" value="cart">
               <span class="checkmark"></span>
             </label>
             <!-- конец фильтр "особенности" -->
-            <button type="submit" aria-label="Показать шаблоны выбранных фильтров" class="btn-filters" tabindex="8">Показать</button>
+            <button type="submit" aria-label="Показать шаблоны выбранных фильтров" class="btn-filters">Показать</button>
           </fieldset>
         </form>
       </section>
@@ -84,16 +83,16 @@
         <h2 class="visually-hidden">Каталог дизайнов</h2>
         <section class="sorting-block">
           <h3 class="visually-hidden">Сортировка</h3>
-          <ul class="sorting-block">
-            <li class="sorting-title">Сортировать:</li>
-            <li class="sorting-items">
+          <div class="sorting-block">
+            <p class="sorting-title">Сортировать:</p>
+            <p class="sorting-items">
             <a href="#" class="active" aria-label="сортировать по цене">по цене</a>
             <a href="#" aria-label="сортировать по типу">по типу</a>
             <a href="#" aria-label="сортировать по названию">по названию</a>
             <a href="#" class="sort-down"><img src="img/icon-down-dir.png" width="11" height="10" alt="" /></a>
             <a href="#" class="sort-up"><img src="img/icon-up-dir.png" width="11" height="10" alt="" /></a>
-          </li>
-        </ul>
+            </p>
+        </div>
       </section>
         <ul class="templates-list">
           <li class="template-item">
@@ -179,44 +178,40 @@
     </main>
     <!-- конец список шаблонов -->
     <!-- конец main -->
-    <footer class="footer-block">
-      <!--  начало  карта Нёрдс -->
+    <footer>
+       <!--  начало  карта Нёрдс -->
     <section class="nerds-location">
       <h4 class="visually-hidden">Наш адрес</h4>
       <div class="nerds-contact">
-        <p aria-label="Nёrds design studio">Nёrds design studio</p>
+        <p class="nerds-title">Nёrds design studio</p>
         <p class="nerds-address" aria-label="191186 Санкт-Петербург,ул. Б. Конюшенная, д.19/8 +7 (812) 275-75-75">
-          191186 Санкт-Петербург,<br/>
-          ул. Б. Конюшенная, д.19/8<br/><br/>
-          +7 (812) 275-75-75
+          191186 Санкт-Петербург,
+          ул. Б. Конюшенная, д.19/8
+          <a class="tel" href="tel:+7 (812) 275-75-75">+7 (812) 275-75-75</a>
         </p>
-        <a href="contacts@nerds.ru" aria-label="Наш email contacts@nerds.ru" class="btn btn-contacts">Напишите нам</a>
+        <a href="mailto:contacts@nerds.ru" aria-label="Наш email contacts@nerds.ru" class="btn btn-contacts">Напишите нам</a>
       </div>
       <p class="nerds-marker" aria-label="Наш адрес на карте">Наш адрес на карте</p>
       <!-- начало форма обратной связи -->
       <div class="modal-feedback">
         <form class="feedback-form" method="post"
           action="https://echo.nerds.ru" aria-label="форма обратной связи">
-          <p class="modal-feedback-close" aria-label="Кнопка закрыть окно формы отправки">Закрыть
-          </p>
+          <a class="modal-feedback-close" aria-label="Кнопка закрыть окно формы отправки">Закрыть
+          </a>
           <fieldset>
-            <ul>
-              <li>
                 <h4 class="feedback-title">Напишите нам</h4>
-              </li>
-              <li class="inputs"><label for="fullname">Ваше имя:</label>
-                <input required id="fullname" aria-label="Ваше имя"  tabindex="0" type="text"
+              <p class="inputs"><label for="fullname">Ваше имя:</label>
+                <input required id="fullname" aria-label="Ваше имя"  type="text"
                   name="fullname" placeholder="Имя Фамилия">
-              </li>
-              <li class="inputs"><label for="user-email">Ваш e-mail:</label>
-                <input required id="user-email" aria-label="Ваш e-mail" tabindex="1" type="email"
+              </p>
+              <p class="inputs"><label for="user-email">Ваш e-mail:</label>
+                <input required id="user-email" aria-label="Ваш e-mail" type="email"
                   name="email" placeholder="email@example.com">
-              </li>
-              <li class="textarea"><label for="email-text">Текст письма:</label>
+              </p>
+              <p class="textarea"><label for="email-text">Текст письма:</label>
                 <textarea required tabindex="-1" aria-label="Текст письма"  name="email-text" id="email-text" placeholder="В свободной форме"></textarea>
-              </li>
-              <li class="send-button"><button class="btn feedback-btn" aria-label="Отправить нам сообщение" name="submit" type="submit">Отправить</button></li>
-            </ul>
+              </p>
+              <p class="send-button"><button class="btn feedback-btn" aria-label="Отправить нам сообщение" name="submit" type="submit">Отправить</button></p>
           </fieldset>
         </form>
       </div>
@@ -230,10 +225,10 @@
           <li><a href="https://facebook.com/nerds" aria-label="Фесбук студии «Нёрдс»" class="social-button" target="_blank"><img src="img/fb-icon.png" width="12" height="22" alt="Фейбсук"/></a> </li>
           <li><a href="https://instagram.com/nerds" aria-label="Инстаграм студии «Нёрдс»"  class="social-button" target="_blank"><img src="img/insta-icon.png" width="21" height="21" alt="Инстаграм"/></a></li>
         </ul>
-        <section class="footer-info" aria-describedby="discount-info">
+        <section class="footer-info">
           <h5 class="visually-hidden">Информация</h5>
           <p class="footer-info-text">Давайте дружить, это выгодно!</p>
-          <p id="discount-info" class="discount">Скидка 10% для друзей из социальных сетей.</p>
+          <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
         </section>
       </div>
     </footer>
